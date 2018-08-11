@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  11 AUG 2018 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  11 AUG 2018 21:11
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -754,33 +754,33 @@ Chapter 1.
 File: wavelets_with_bottom_line.png Graphic file (type png)
 
 <use wavelets_with_bottom_line.png>
-Package pdftex.def Info: wavelets_with_bottom_line.png used on input line 23.
+Package pdftex.def Info: wavelets_with_bottom_line.png used on input line 19.
 (pdftex.def)             Requested size: 390.0pt x 217.71188pt.
  [7 <./wavelets_with_bottom_line.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 50.
+               Default added (so using `tbp') on input line 52.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 []|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 52--69
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 54--71
  [][] 
  []
 
-[8] <DWT.png, id=78, 568.1225pt x 173.64874pt>
+<DWT.png, id=75, 568.1225pt x 173.64874pt>
 File: DWT.png Graphic file (type png)
  <use DWT.png>
-Package pdftex.def Info: DWT.png used on input line 98.
+Package pdftex.def Info: DWT.png used on input line 100.
 (pdftex.def)             Requested size: 390.0pt x 119.20833pt.
-
-<2D_DWT.JPG, id=79, 144.54pt x 58.2978pt>
+ [8]
+<2D_DWT.JPG, id=80, 144.54pt x 58.2978pt>
 File: 2D_DWT.JPG Graphic file (type jpg)
  <use 2D_DWT.JPG>
-Package pdftex.def Info: 2D_DWT.JPG used on input line 111.
+Package pdftex.def Info: 2D_DWT.JPG used on input line 114.
 (pdftex.def)             Requested size: 390.0pt x 157.30829pt.
 ) [9 <./DWT.png (PNG copy)> <./2D_DWT.JPG>] [10
 
@@ -797,10 +797,10 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ) [13] (document_KK.aux (introduction.aux) (chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 5566 strings out of 493334
- 78621 string characters out of 3139251
- 154232 words of memory out of 3000000
- 8962 multiletter control sequences out of 15000+200000
+ 5565 strings out of 493334
+ 78609 string characters out of 3139251
+ 154222 words of memory out of 3000000
+ 8961 multiletter control sequences out of 15000+200000
  11755 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,564b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -813,17 +813,18 @@ fonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fp
-l/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document_KK.pdf (13 pages, 675789 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/palatino/uplri8a.pfb>
+Output written on document_KK.pdf (13 pages, 684458 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

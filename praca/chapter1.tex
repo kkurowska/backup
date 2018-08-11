@@ -2,16 +2,11 @@
 A wavelet literally means a small wave. The term says a lot about wavelets nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean, an amplitude begins at 0, increases and decreases to 0 again.
 
 \begin{defn}
-Wavelets are created by scaling (\ref{eq:scaling}) and shifting (\ref{eq:shifting}) of the, so called, mother wavelet $\psi(t)$.
+Wavelets are created by scaling and shifting of the, so called, mother wavelet $\psi(t)$. The child wavelets are defined as
 
 \begin{equation}
-\label{eq:scaling}
-\psi\left(\frac{t}{a}\right),\ a>0.
-\end{equation}
-
-\begin{equation}
-\label{eq:shifting}
-\psi(t-b).
+\label{eq:wavelets}
+\psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right). 
 \end{equation}
 
 \end{defn}
@@ -32,14 +27,19 @@ There are plenty of different mother wavelets, for example
 
 \textit{** Add some short introduction **}
 
+\begin{defn}
+Wavelet transform
+
 \begin{equation}
 W(a,b)=\int_{-\infty}^{\infty} y(t) a^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right) dt,
 \end{equation}
 
 where $a$ is scale parameter, $b$ translation parameter and $y(t)$ original signal.
+\end{defn}
 
 \subsection{Wavelet transform vs Fourier transform}
 
+\begin{defn}
 Fourier transform
 
 \begin{equation}
@@ -47,6 +47,7 @@ Y(f)=\int_{-\infty}^{\infty} y(t) e^{-i\omega t} dt,
 \end{equation}
 
 where $y(t)$ is time domain signal and $Y(f)$ is frequency domain signal.
+\end{defn}
 
 \begin{table}[]
 \centering
@@ -104,8 +105,9 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 
 \section{2-D Discrete Wavelet transform}
 
-
 \textit{** Add introduction that 2D transform is for images and how it works **}
+
+2-D Descrete Wavelet Transform works the same way as 1-D except that one level of the decomposition contains filtering columns and rows.
 
 \begin{figure}[h]
 	\centering
