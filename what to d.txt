@@ -1,0 +1,4 @@
+zrobić histogramy
+odczytać kwantyl np 0.9
+
+zdjęcia z medycyny - rentgeny itp (10-15)

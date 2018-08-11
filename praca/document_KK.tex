@@ -1,0 +1,108 @@
+\documentclass[twoside,a4paper,12pt]{mwbk}
+
+\usepackage[utf8]{inputenc}
+%\usepackage{times}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage[final]{pdfpages}
+\usepackage{graphicx}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+\usepackage{dsfont}
+\usepackage{float}
+
+\usepackage{booktabs}
+\usepackage{array}
+
+
+\setlength{\parindent}{0pt}
+
+%\usepackage{geometry}
+%\newgeometry{tmargin=2.5cm, bmargin=2.5cm, lmargin=2.5cm, rmargin=2.5cm}
+
+%\numberwithin{equation}{section}
+%\numberwithin{figure}{section}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+
+%\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
+%\newcommand*{\MR}[1]{\href{http://www.ams.org/mathscinet-getitem?mr=#1&return=pdf}{MR #1}}
+%\newcommand*{\ZBL}[1]{\href{http://www.zentralblatt-math.org/zmath/en/advanced/?q=an:#1&format=complete}{Zbl #1}}
+
+
+\newcommand{\1}[1]{\mathds{1}\left(#1\right)}
+
+\newenvironment{diagrams}[2]{\begin{figure}[p]
+	%\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{wykresy/#1.png}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{wykresy/#2.png}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+	}
+	{
+	\end{figure}
+	}
+
+\newenvironment{subdiagrams}[2]{
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{wykresy/#1.png}
+			\caption{}
+			\label{#1}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{wykresy/#2.png}
+			\caption{}
+			\label{#2}
+		\end{subfigure}
+	} {}
+
+\newenvironment{subdiagram}[1]{
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=.9\textwidth]{wykresy/#1.png}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+} {}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+
+
+\begin{document}
+	
+\begin{titlepage}
+	\includepdf{title_page.pdf}
+\end{titlepage}
+
+
+\tableofcontents
+
+\include{introduction}
+\include{chapter1}
+
+\listoffigures
+%\listoftables
+
+%\bibliographystyle{unsrt} % w kolejności pojawienia
+\bibliographystyle{abbrv} % w kolejności alfabetycznej
+\bibliography{dokument_KK}
+%\nocite{Buonaccorsi1987}
+%\nocite{Edgeworth1918}
+%\nocite{Wang2015}
+	
+\end{document}

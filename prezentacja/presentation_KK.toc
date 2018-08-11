@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {UKenglish}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{The main goal}{6}{0}{2}
+\beamer@sectionintoc {3}{Wavelets theory}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{What is a wavelet?}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Wavelet transform}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Properties of Wavelets}{12}{0}{3}
+\beamer@sectionintoc {4}{Edge detection}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{2-D Discrete Wavelet Transform}{18}{0}{4}
+\beamer@sectionintoc {5}{Bibliography}{22}{0}{5}

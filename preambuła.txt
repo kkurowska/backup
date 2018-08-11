@@ -1,0 +1,41 @@
+\documentclass[12pt, a4paper, titlepage]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[toc,page]{appendix}
+\usepackage[final]{pdfpages}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titlesec}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{sidecap} % obrazki kolo siebie
+\usepackage{wrapfig} % obrazki kolo siebie
+\usepackage{subfig} % obrazki kolo siebie
+\usepackage{setspace} %interlinia
+%\usepackage{subcaption}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{enumerate}
+
+
+\begin{document}
+
+\begin{titlepage}
+\includepdf[pages={1}]{strona-tytulowa-magisterka.pdf}
+\end{titlepage}
+\thispagestyle{empty}
+
+\begin{titlepage}
+\includepdf[pages={1}]{praca_dyplomowa_strona_tytulowa_pl_pdf.pdf}
+\end{titlepage}
+\thispagestyle{empty}
+
+\clearpage
+\begin{spacing}{0.95}
+\tableofcontents
+\end{spacing}
+\clearpage

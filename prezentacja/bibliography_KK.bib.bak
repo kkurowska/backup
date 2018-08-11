@@ -1,0 +1,21 @@
+% Encoding: UTF-8
+
+@Article{,
+  author  = {T. Li, S. Ma, M. Ogihara},
+  title   = {Wavelet methods in data mining},
+  journal = {Data Mining and Knowledge Discovery Handbook},
+  year    = {2005},
+  pages   = {603-626},
+}
+
+@Article{,
+  author  = {L. Zhang, W. Zhou, L. Jiao},
+  title   = {Wavelet support vector machine},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics},
+  year    = {2004},
+  volume  = {Part B (Cybernetics)},
+  number  = {34.1},
+  pages   = {34-39},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
