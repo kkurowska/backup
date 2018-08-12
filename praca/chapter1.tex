@@ -105,9 +105,14 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 
 \section{2-D Discrete Wavelet transform}
 
-\textit{** Add introduction that 2D transform is for images and how it works **}
+2-D Discrete Wavelet Transform works similar way as 1-D with High Pass Filter and Low Pass Filter, except that one level of the decomposition includes double filtering, on columns and rows. The figure \ref{fig:2D_DWT} shows image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
 
-2-D Descrete Wavelet Transform works the same way as 1-D except that one level of the decomposition contains filtering columns and rows.
+\begin{itemize}
+\item LL - result of LPF applied on both, columns and rows,
+\item LH - result of LPF applied on columns and HPF on rows,
+\item HL - result of HPF applied on columns and LPF on rows,
+\item HH - result of HPF applied on both, columns and rows.
+\end{itemize}  
 
 \begin{figure}[h]
 	\centering
@@ -117,8 +122,6 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 \end{figure}
 
 
-
-
-
+\textit{** Add description what shows all of the four results - approximation, horizontal, vertical, diagonal}
 
 
