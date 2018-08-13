@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  12 AUG 2018 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  13 AUG 2018 23:02
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -581,7 +581,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 )
 \c@thm=\count113
  (document_KK.aux
-(introduction.aux) (chapter1.aux))
+(introduction.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux))
 \openout1 = `document_KK.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -756,75 +756,106 @@ File: wavelets_with_bottom_line.png Graphic file (type png)
 <use wavelets_with_bottom_line.png>
 Package pdftex.def Info: wavelets_with_bottom_line.png used on input line 19.
 (pdftex.def)             Requested size: 390.0pt x 217.71188pt.
+
+<DB_N.png, id=62, 1631.09375pt x 725.71124pt>
+File: DB_N.png Graphic file (type png)
+ <use DB_N.png>
+Package pdftex.def Info: DB_N.png used on input line 37.
+(pdftex.def)             Requested size: 390.0pt x 173.52092pt.
  [7 <./wavelets_with_bottom_line.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 52.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-[]|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and
+Underfull \hbox (badness 5490) in paragraph at lines 76--77
+[]|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and non-
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 54--71
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 72--89
  [][] 
  []
 
-<DWT.png, id=75, 568.1225pt x 173.64874pt>
+[8 <./DB_N.png>] <DWT.png, id=81, 568.1225pt x 173.64874pt>
 File: DWT.png Graphic file (type png)
  <use DWT.png>
-Package pdftex.def Info: DWT.png used on input line 100.
+Package pdftex.def Info: DWT.png used on input line 118.
 (pdftex.def)             Requested size: 390.0pt x 119.20833pt.
- [8]
-<2D_DWT.JPG, id=80, 144.54pt x 58.2978pt>
+
+[9 <./DWT.png (PNG copy)>] <2D_DWT.JPG, id=85, 144.54pt x 58.2978pt>
 File: 2D_DWT.JPG Graphic file (type jpg)
- <use 2D_DWT.JPG>
-Package pdftex.def Info: 2D_DWT.JPG used on input line 119.
+
+<use 2D_DWT.JPG>
+Package pdftex.def Info: 2D_DWT.JPG used on input line 137.
 (pdftex.def)             Requested size: 390.0pt x 157.30829pt.
-) [9 <./DWT.png (PNG copy)> <./2D_DWT.JPG>] [10
+) [10 <./2D_DWT.JPG>]
+\openout2 = `chapter2.aux'.
+
+ (chapter2.tex
+Chapter 2.
+) [11
+
+
+
+]
+\openout2 = `chapter3.aux'.
+
+ (chapter3.tex [12
+
+
+
+]
+Chapter 3.
+) [13] [14
 
 
 ] (document_KK.lof)
 \tf@lof=\write4
 \openout4 = `document_KK.lof'.
 
- (document_KK.bbl [11] [12
+ [15] [16
 
-]
+] (document_KK.lot)
+\tf@lot=\write5
+\openout5 = `document_KK.lot'.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+ (document_KK.bbl
+[17] [18
 
-) [13] (document_KK.aux (introduction.aux) (chapter1.aux)) ) 
+])
+
+LaTeX Warning: Citation `DataManing' undefined on input line 112.
+
+[19] (document_KK.aux (introduction.aux) (chapter1.aux) (chapter2.aux)
+(chapter3.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5565 strings out of 493334
- 78609 string characters out of 3139251
- 154230 words of memory out of 3000000
- 8961 multiletter control sequences out of 15000+200000
+ 5597 strings out of 493334
+ 79083 string characters out of 3139251
+ 154081 words of memory out of 3000000
+ 8975 multiletter control sequences out of 15000+200000
  11755 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,564b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/palatino/uplri8a.pfb>
-Output written on document_KK.pdf (13 pages, 685208 bytes).
+ 40i,18n,43p,659b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fp
+lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on document_KK.pdf (19 pages, 728818 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

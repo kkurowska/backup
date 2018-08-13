@@ -1,0 +1,43 @@
+% Encoding: UTF-8
+
+@Article{WaveletMethodsInDataMining,
+  author  = {T. Li, S. Ma, M. Ogihara},
+  title   = {Wavelet methods in data mining},
+  journal = {Data Mining and Knowledge Discovery Handbook},
+  year    = {2005},
+  pages   = {603-626},
+}
+
+@Article{WaveletSupportVectorMachine,
+  author  = {L. Zhang, W. Zhou, L. Jiao},
+  title   = {Wavelet support vector machine},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics},
+  year    = {2004},
+  volume  = {Part B (Cybernetics)},
+  number  = {34.1},
+  pages   = {34-39},
+}
+
+@Unpublished{WaveletNotes,
+  author = {B. M. Kessler, G. L. Payne, W. N. Polyzou},
+  title  = {Wavelet Notes},
+  note   = {The University of Iowa},
+  month  = feb,
+  year   = {2008},
+}
+
+@MastersThesis{EdgeDetection,
+  author = {Venkata Ravikiran Chaganti},
+  title  = {Edge Detection of Noisy Images Using 2-D Discrete Wavelet Transform},
+  school = {The Florida State University},
+  year   = {2005},
+}
+
+@Article{BiomedicalImages,
+  author  = {S. Lahmiri, M. Boukadoum},
+  title   = {Hybrid Discrete Wavelet Transform and Gabor Filter Banks Processing for Features Extraction from Biomedical Images},
+  journal = {Journal of Medical Engineering},
+  year    = {2013},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

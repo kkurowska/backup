@@ -1,12 +1,12 @@
 \chapter{}
-A wavelet literally means a small wave. The term says a lot about wavelets nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean, an amplitude begins at 0, increases and decreases to 0 again.
+What exactly is a wavelet? A wavelet means a small wave. This term says a lot about it nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean.
 
 \begin{defn}
 Wavelets are created by scaling and shifting of the, so called, mother wavelet $\psi(t)$. The child wavelets are defined as
 
 \begin{equation}
 \label{eq:wavelets}
-\psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right). 
+\psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right),\ a>0. 
 \end{equation}
 
 \end{defn}
@@ -21,11 +21,27 @@ There are plenty of different mother wavelets, for example
 	\label{fig:wavelets}
 \end{figure}
 
-\textit{** Add more about wavelets properties **}
+\textit{** Add more about wavelets properties? **}
+
+
+\section{Daubechies wavelets}
+
+Each type of wavelet function is more suitable for different applications. The best for image analysis are the Daubechies wavelets. 
+
+\begin{defn}
+Daubechies wavelets are collection of orthogonal and compactly supported functions. A denotation for those wavelets is $dbN$, where $N$ means a maximal number of vanishing moments.
+\end{defn}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{DB_N.png}
+	\caption{Daubechies wavelets.}
+	\label{fig:db_wavelets}
+\end{figure}
 
 \section{Wavelet Transform}
 
-\textit{** Add some short introduction **}
+\textit{** Add some short introduction? **}
 
 \begin{defn}
 Wavelet transform
@@ -49,13 +65,15 @@ Y(f)=\int_{-\infty}^{\infty} y(t) e^{-i\omega t} dt,
 where $y(t)$ is time domain signal and $Y(f)$ is frequency domain signal.
 \end{defn}
 
-\begin{table}[]
+\begin{table}[h]
 \centering
+
+\label{The diferrences between Wavelet Transform and Fourier Transform.}
 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \toprule
 \textbf{ Wavelet transform} & \textbf{Fourier transform}
 \\ \midrule
-Suitable for stationary and non-stationary signals 
+Suitable for stationary and non-\allowbreak -stationary signals 
 & Suitable for stationary signals 
 \\ \midrule
 High time and frequency resolution
@@ -70,10 +88,10 @@ Sine and cosine waves
 \end{tabular}
 \end{table}
 
-Wavelet transform is similar to the Fourier transform but with the different functions. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets.
+What differs both transformations is the type of function. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets.
 
-Why use Wavelet transform?
-Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. On the other hand, the Wavelet transform is localized in space and time, so it can be used to detect sudden changes in signals and images. Moreover, wide range of wavelet functions is a main advantage of wavelet analysis.
+Why use the Wavelet transform?
+Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. However, the Wavelet transform is localized in space and time, so it can be used to detect sudden changes in signals and images. Moreover, wide range of wavelet functions is a main advantage of wavelet analysis.
 
 \section{Discrete Wavelet transform}
 There are two types of the wavelet transform:
@@ -121,7 +139,8 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 	\label{fig:2D_DWT}
 \end{figure}
 
+Now lets focus on what exactly each result represent. First one, the LL is just an approximation of the image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part present similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions. What information gives as these sudden variations? Thanks to those we are able to find a places where two smooth regions meets. This kind of image anomaly could be interpreted as edges.
 
-\textit{** Add description what shows all of the four results - approximation, horizontal, vertical, diagonal}
+\textit{** Explain what is an image approximation **}
 
 
