@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  13 AUG 2018 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  17 AUG 2018 00:08
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -763,19 +763,19 @@ File: DB_N.png Graphic file (type png)
 Package pdftex.def Info: DB_N.png used on input line 37.
 (pdftex.def)             Requested size: 390.0pt x 173.52092pt.
  [7 <./wavelets_with_bottom_line.png>]
-Underfull \hbox (badness 5490) in paragraph at lines 76--77
+Underfull \hbox (badness 5490) in paragraph at lines 74--75
 []|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and non-
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 72--89
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 70--87
  [][] 
  []
 
 [8 <./DB_N.png>] <DWT.png, id=81, 568.1225pt x 173.64874pt>
 File: DWT.png Graphic file (type png)
  <use DWT.png>
-Package pdftex.def Info: DWT.png used on input line 118.
+Package pdftex.def Info: DWT.png used on input line 117.
 (pdftex.def)             Requested size: 390.0pt x 119.20833pt.
 
 [9 <./DWT.png (PNG copy)>] <2D_DWT.JPG, id=85, 144.54pt x 58.2978pt>
@@ -789,20 +789,32 @@ Package pdftex.def Info: 2D_DWT.JPG used on input line 137.
 
  (chapter2.tex
 Chapter 2.
-) [11
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Overfull \hbox (12.36032pt too wide) in paragraph at lines 17--18
+[]\OT1/cmr/m/n/12 The al-go-rithm is im-ple-mented in \OT1/cmtt/m/n/12 Python \
+OT1/cmr/m/n/12 us-ing li-brary/package (?) \OT1/cmtt/m/n/12 PyWavelets\OT1/cmr/
+m/n/12 .
+ []
+
+[11
 
 
 
-]
+]) [12]
 \openout2 = `chapter3.aux'.
 
- (chapter3.tex [12
-
-
-
-]
+ (chapter3.tex
 Chapter 3.
-) [13] [14
+) [13
+
+
+
+] [14
 
 
 ] (document_KK.lof)
@@ -829,13 +841,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5597 strings out of 493334
- 79083 string characters out of 3139251
- 154081 words of memory out of 3000000
- 8975 multiletter control sequences out of 15000+200000
- 11755 words of font info for 44 fonts, out of 3000000 for 9000
+ 5600 strings out of 493334
+ 79065 string characters out of 3139251
+ 154009 words of memory out of 3000000
+ 8977 multiletter control sequences out of 15000+200000
+ 11924 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,659b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,43p,1112b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -849,13 +861,14 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fp
-lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document_KK.pdf (19 pages, 728818 bytes).
+1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on document_KK.pdf (19 pages, 745511 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

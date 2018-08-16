@@ -1,4 +1,4 @@
-\chapter{}
+\chapter{Wavelets theory}
 What exactly is a wavelet? A wavelet means a small wave. This term says a lot about it nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean.
 
 \begin{defn}
@@ -67,8 +67,6 @@ where $y(t)$ is time domain signal and $Y(f)$ is frequency domain signal.
 
 \begin{table}[h]
 \centering
-
-\label{The diferrences between Wavelet Transform and Fourier Transform.}
 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \toprule
 \textbf{ Wavelet transform} & \textbf{Fourier transform}
@@ -86,6 +84,7 @@ Sine and cosine waves
 & Scaled and translated mother wavelets
 \\ \bottomrule
 \end{tabular}
+\caption{Differences between Wavelet Transform and Fourier Transform.}
 \end{table}
 
 What differs both transformations is the type of function. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets.
@@ -111,7 +110,7 @@ a = 2^j \text{ and } b = 2^j k,\ j,k=1,2,\ldots.
 to avoid redundancy in coefficients.
 
 
-The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $h(n)$ - high pass filter (HPF) and $g(n)$ - low pass filter (LPF). The HPF captures a part with bigger frequencies which is the main signal. Whereas, the LPF captures smaller frequencies - a noise of the signal. Subsequently, both parts are down sampled by a factor of 2. This decomposition can be repeated on the HPF part of the signal. Hence, the next levels of DWT coefficients.
+The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $g(n)$ - low pass filter (LPF) and $h(n)$ - high pass filter (HPF). The LPF captures a part with lower frequencies which is the main signal. Whereas, the HPF captures higher frequencies - a noise of the signal. Subsequently, both parts are downsampled by a factor of 2. This decomposition can be repeated on the LPF part of the signal. Hence, the next levels of DWT coefficients.
 
 \begin{figure}[h]
 	\centering
@@ -122,8 +121,9 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 
 
 \section{2-D Discrete Wavelet transform}
+\label{sec:2D_DWT}
 
-2-D Discrete Wavelet Transform works similar way as 1-D with High Pass Filter and Low Pass Filter, except that one level of the decomposition includes double filtering, on columns and rows. The figure \ref{fig:2D_DWT} shows image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
+2-Dimensional Discrete Wavelet Transform works similar way as 1-D with High Pass Filter, Low Pass Filter and downsampling, except that one level of the decomposition includes double filtering, on columns and rows. The figure \ref{fig:2D_DWT} shows an image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
 
 \begin{itemize}
 \item LL - result of LPF applied on both, columns and rows,
@@ -139,8 +139,6 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 	\label{fig:2D_DWT}
 \end{figure}
 
-Now lets focus on what exactly each result represent. First one, the LL is just an approximation of the image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part present similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions. What information gives as these sudden variations? Thanks to those we are able to find a places where two smooth regions meets. This kind of image anomaly could be interpreted as edges.
-
-\textit{** Explain what is an image approximation **}
+Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part present similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions. What information gives as these sudden variations? Thanks to those we are able to find a places where two smooth regions meets. This kind of image anomaly could be interpreted as edges.
 
 

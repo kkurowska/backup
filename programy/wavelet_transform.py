@@ -8,17 +8,17 @@ import scipy.misc
 
 wavelet_name = 'db2'
 
-image_name = 'white_square_15'
+# image_name = 'square'
 
 # Load image
 # original = pywt.data.camera()
 
-im = np.zeros((256, 256)) # square
+im = np.zeros((256, 256)) # numpy square
 im[64:-64, 64:-64] = 1
-im = ndimage.rotate(im, 15, mode='constant')
+# im = ndimage.rotate(im, 45, mode='constant') # diamond
 original = im
 
-# original_image = Image.open(image_name + '.jpg').convert('L')
+# original_image = Image.open(image_name + '.png').convert('L')
 # original = np.asarray(original_image, dtype="int32")
 
 # Wavelet transform of image, and plot approximation and details
@@ -60,20 +60,20 @@ denoised_coeffs2 = coefs[0], (coefs[1], coefs[2], coefs[3])
 
 # Now reconstruct and plot the original image
 reconstructed = pywt.idwt2(denoised_coeffs2, wavelet_name)
-print(np.min(reconstructed))
-print(np.max(reconstructed))
+# print(np.min(reconstructed))
+# print(np.max(reconstructed))
 # change contrast
 r1 = 255 - (np.sqrt(reconstructed / 255) * 255)
 
 r2 = (np.abs(reconstructed) - 128) * 2 # from article
 
-print(np.min(r2))
-print(np.max(r2))
+# print(np.min(r2))
+# print(np.max(r2))
 
 # image = Image.fromarray(r2).convert('L')
 # image.save(image_name + '_' + wavelet_name + '.png')
 
-scipy.misc.toimage(r2).save(image_name + '_' + wavelet_name + '.png')
+# scipy.misc.toimage(r2).save(image_name + '_' + wavelet_name + '.png')
 
 fig = plt.figure()
 ax = fig.add_subplot(2, 2, 1)

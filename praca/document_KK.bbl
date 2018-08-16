@@ -1,31 +1,31 @@
 \begin{thebibliography}{1}
 
-\bibitem{WaveletNotes}
-W.~P. B.~Kessler, G.~Payne.
-\newblock Wavelet notes.
-\newblock The University of Iowa, Feb. 2008.
-
 \bibitem{EdgeDetection}
 V.~R. Chaganti.
 \newblock Edge detection of noisy images using 2-d discrete wavelet transform.
 \newblock Master's thesis, The Florida State University, 2005.
 
-\bibitem{WaveletSupportVectorMachine}
-L.~J. L.~Zhang, W.~Zhou.
-\newblock Wavelet support vector machine.
-\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, Part B
-  (Cybernetics)(34.1):34--39, 2004.
+\bibitem{WaveletNotes}
+B.~{Kessler, G. Payne, W. Polyzou}.
+\newblock Wavelet notes.
+\newblock The University of Iowa, Feb. 2008.
 
 \bibitem{BiomedicalImages}
-M.~B. S.~Lahmiri.
+S.~{Lahmiri, M. Boukadoum}.
 \newblock Hybrid discrete wavelet transform and gabor filter banks processing
   for features extraction from biomedical images.
 \newblock {\em Journal of Medical Engineering}, 2013.
 
 \bibitem{WaveletMethodsInDataMining}
-M.~O. T.~Li, S.~Ma.
+T.~{Li, S. Ma, M. Ogihara}.
 \newblock Wavelet methods in data mining.
 \newblock {\em Data Mining and Knowledge Discovery Handbook}, pages 603--626,
   2005.
+
+\bibitem{WaveletSupportVectorMachine}
+L.~{Zhang, W. Zhou, L. Jiao}.
+\newblock Wavelet support vector machine.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, Part B
+  (Cybernetics)(34.1):34--39, 2004.
 
 \end{thebibliography}
