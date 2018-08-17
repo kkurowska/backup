@@ -6,55 +6,66 @@ from PIL import Image
 from scipy import ndimage
 import scipy.misc
 
-wavelet_name = 'db2'
+wavelet_name = 'db1'
 
-# image_name = 'square'
+s = 8
+image_name = 'koniczyna'
 
 # Load image
 # original = pywt.data.camera()
 
-im = np.zeros((256, 256)) # numpy square
-im[64:-64, 64:-64] = 1
+# im = np.zeros((256, 256)) # numpy square
+# im[64:-64, 64:-64] = 1
 # im = ndimage.rotate(im, 45, mode='constant') # diamond
-original = im
+# im = ndimage.gaussian_filter(im, sigma=s)
+# original = im
 
-# original_image = Image.open(image_name + '.png').convert('L')
-# original = np.asarray(original_image, dtype="int32")
+original_image = Image.open(image_name + '.jpg').convert('L')
+# original_image = ndimage.gaussian_filter(original_image, sigma=s)
+original = np.asarray(original_image, dtype="int32")
 
 # Wavelet transform of image, and plot approximation and details
-titles = ['Approximation', ' Horizontal detail',
-          'Vertical detail', 'Diagonal detail']
+titles = ['Approximation (LL)', ' Horizontal detail (LH)',
+          'Vertical detail (HL)', 'Diagonal detail (HH)']
 
 coeffs2 = pywt.dwt2(original, wavelet_name)
 LL, (LH, HL, HH) = coeffs2
 t = [0, 0, 0, 0]
+l = 95
 fig = plt.figure()
 for i, a in enumerate([LL, LH, HL, HH]):
     if i == 0:
-        t[i] = np.percentile(a, 100)
+        t[i] = np.percentile(a, 100) + 0.01
     elif i == 3:
-        t[i] = np.percentile(a, 95)
+        t[i] = np.percentile(a, l)
     else:
-        t[i] = np.percentile(a, 90)
+        t[i] = np.percentile(a, l)
     a = np.flip(a, 0)
     ax = fig.add_subplot(2, 2, i + 1)
     ax.imshow(a, origin='image', interpolation="nearest", cmap=plt.cm.gray)
     ax.set_title(titles[i], fontsize=12)
     ax.set_axis_off()
-fig.suptitle("dwt2 coefficients", fontsize=14)
+# fig.suptitle("2-D DWT Coefficients", fontsize=14)
 
+# hist, bin_edges = np.histogram(LH, bins=60)
+# plt.plot(bin_edges, hist)
+# plt.show()
 
 coefs = [0, 0, 0, 0]
 fig = plt.figure()
 for i, a in enumerate([LL, LH, HL, HH]):
-    da = pywt.threshold(a, t[i], mode='soft')
+    th_mode = 'soft'
+    da = pywt.threshold(a, t[i], mode=th_mode)
     coefs[i] = da
     da = np.flip(da, 0)
     ax = fig.add_subplot(2, 2, i + 1)
-    ax.imshow(da, origin='image', interpolation="nearest", cmap=plt.cm.gray)
+    if i==0:
+        ax.imshow(da, origin='image', interpolation="nearest", cmap=plt.cm.gray, vmin=-1, vmax=1)
+    else:
+        ax.imshow(da, origin='image', interpolation="nearest", cmap=plt.cm.gray)
     ax.set_title(titles[i], fontsize=12)
     ax.set_axis_off()
-fig.suptitle("denoised coefficients", fontsize=14)
+# fig.suptitle("Denoised Coefficients", fontsize=14)
 
 denoised_coeffs2 = coefs[0], (coefs[1], coefs[2], coefs[3])
 
@@ -70,10 +81,12 @@ r2 = (np.abs(reconstructed) - 128) * 2 # from article
 # print(np.min(r2))
 # print(np.max(r2))
 
-# image = Image.fromarray(r2).convert('L')
+# image = Image.fromarray(r1).convert('L')
 # image.save(image_name + '_' + wavelet_name + '.png')
 
-# scipy.misc.toimage(r2).save(image_name + '_' + wavelet_name + '.png')
+# scipy.misc.toimage(original).save('graphs/' + image_name + '.png')
+# scipy.misc.toimage(reconstructed).save('graphs/' + image_name + '_' + wavelet_name + '_' + str(l) + '.png')
+# scipy.misc.toimage(r2).save('graphs/' + image_name + '_' + wavelet_name + '_' + str(l) + '_pp.png')
 
 fig = plt.figure()
 ax = fig.add_subplot(2, 2, 1)

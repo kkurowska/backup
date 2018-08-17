@@ -5,6 +5,16 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Discrete Wavelet transform on a signal $x(n)$.\relax }}{9}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces 2-D Discrete Wavelet transform on an image.\relax }}{10}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An initial image - a white square.\relax }}{11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 2-D DWT coefficients.\relax }}{12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 2-D DWT coefficients with removed the LL part.\relax }}{12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A reconstructed image showing the edges.\relax }}{13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The edges of the square image after post-processing.\relax }}{13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A noisy square image.\relax }}{14}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 2-D DWT coefficients.\relax }}{14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces 2-D DWT coefficients after hard thresholding.\relax }}{15}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces 2-D DWT coefficients after soft thresholding.\relax }}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Results of edge detection with hard (a) and soft (b) thresholding.\relax }}{16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

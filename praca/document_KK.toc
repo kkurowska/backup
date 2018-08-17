@@ -7,9 +7,11 @@
 \contentsline {section}{\numberline {1.4\relax .\kern .5em }2-D Discrete Wavelet transform}{9}
 \contentsline {chapter}{Chapter\ 2\relax .\kern .5em Edge detection}{11}
 \contentsline {section}{\numberline {2.1\relax .\kern .5em }Implementation of an algorithm}{11}
-\contentsline {section}{\numberline {2.2\relax .\kern .5em }Thresholding}{12}
-\contentsline {section}{\numberline {2.3\relax .\kern .5em }Example}{12}
-\contentsline {chapter}{Chapter\ 3\relax .\kern .5em }{13}
-\contentsline {chapter}{List of Figures}{15}
-\contentsline {chapter}{List of Tables}{17}
-\contentsline {chapter}{Bibliography}{19}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Thresholding}{13}
+\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Hard or soft thresholding}{14}
+\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Selection of the threshold}{15}
+\contentsline {section}{\numberline {2.3\relax .\kern .5em }Wavelet types}{15}
+\contentsline {chapter}{Chapter\ 3\relax .\kern .5em }{17}
+\contentsline {chapter}{List of Figures}{19}
+\contentsline {chapter}{List of Tables}{21}
+\contentsline {chapter}{Bibliography}{23}
