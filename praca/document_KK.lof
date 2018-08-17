@@ -14,7 +14,11 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces 2-D DWT coefficients.\relax }}{14}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces 2-D DWT coefficients after hard thresholding.\relax }}{15}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces 2-D DWT coefficients after soft thresholding.\relax }}{15}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Results of edge detection with hard (a) and soft (b) thresholding.\relax }}{16}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Results of edge detection with hard and soft thresholding.\relax }}{16}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The initial images of diamond with different noise level.\relax }}{16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.95 quantile.\relax }}{17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.99 quantile.\relax }}{17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.98 quantile.\relax }}{17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

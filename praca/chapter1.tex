@@ -1,16 +1,17 @@
 \chapter{Wavelets theory}
-What exactly is a wavelet? A wavelet means a small wave. This term says a lot about it nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean.
+A ''wavelet'' literally means a small wave. This term says a lot about its nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean.
 
 \begin{defn}
 Wavelets are created by scaling and shifting of the, so called, mother wavelet $\psi(t)$. The child wavelets are defined as
 
 \begin{equation}
 \label{eq:wavelets}
-\psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right),\ a>0. 
+\psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right),\ a>0,
 \end{equation}
 
-\end{defn}
+where $a$ is a scale parameter and $b$ translation parameter.
 
+\end{defn}
 
 There are plenty of different mother wavelets, for example
 
@@ -21,7 +22,7 @@ There are plenty of different mother wavelets, for example
 	\label{fig:wavelets}
 \end{figure}
 
-\textit{** Add more about wavelets properties? **}
+\textit{** Add more about wavelets properties! **}
 
 
 \section{Daubechies wavelets}
@@ -41,7 +42,7 @@ Daubechies wavelets are collection of orthogonal and compactly supported functio
 
 \section{Wavelet Transform}
 
-\textit{** Add some short introduction? **}
+\textit{** Add some short introduction! -> po co to, co daje, do czego i dlaczego o tym piszemy  **}
 
 \begin{defn}
 Wavelet transform
@@ -54,6 +55,8 @@ where $a$ is scale parameter, $b$ translation parameter and $y(t)$ original sign
 \end{defn}
 
 \subsection{Wavelet transform vs Fourier transform}
+
+\textit{** General information about integral transforms  **}
 
 \begin{defn}
 Fourier transform
@@ -80,8 +83,8 @@ High time and frequency resolution
 Very suitable for studying the local behaviours of the signal
 & No suitable  
 \\ \midrule
-Sine and cosine waves
-& Scaled and translated mother wavelets
+Scaled and translated mother wavelets
+& Sine and cosine waves
 \\ \bottomrule
 \end{tabular}
 \caption{Differences between Wavelet Transform and Fourier Transform.}
@@ -90,7 +93,9 @@ Sine and cosine waves
 What differs both transformations is the type of function. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets.
 
 Why use the Wavelet transform?
-Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. However, the Wavelet transform is localized in space and time, so it can be used to detect sudden changes in signals and images. Moreover, wide range of wavelet functions is a main advantage of wavelet analysis.
+Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. However, the Wavelet transform is localized in space and time, so it can be used to detect trends or sudden changes in signals and images. 
+
+Moreover, wide range of wavelet functions is a main advantage of wavelet analysis.
 
 \section{Discrete Wavelet transform}
 There are two types of the wavelet transform:
@@ -110,7 +115,7 @@ a = 2^j \text{ and } b = 2^j k,\ j,k=1,2,\ldots.
 to avoid redundancy in coefficients.
 
 
-The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $g(n)$ - low pass filter (LPF) and $h(n)$ - high pass filter (HPF). The LPF captures a part with lower frequencies which is the main signal. Whereas, the HPF captures higher frequencies - a noise of the signal. Subsequently, both parts are downsampled by a factor of 2. This decomposition can be repeated on the LPF part of the signal. Hence, the next levels of DWT coefficients.
+The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $g(n)$ - low pass filter (LPF) and $h(n)$ - high pass filter (HPF). The LPF captures a part with lower frequencies which refers to the main signal. Whereas, the HPF captures higher frequencies - a noise of the signal. Subsequently, both parts are downsampled by a factor of 2. This decomposition can be repeated on the LPF part of the signal. Hence, the next levels of DWT coefficients.
 
 \begin{figure}[h]
 	\centering
@@ -139,6 +144,14 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 	\label{fig:2D_DWT}
 \end{figure}
 
-Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part present similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions. What information gives as these sudden variations? Thanks to those we are able to find a places where two smooth regions meets. This kind of image anomaly could be interpreted as edges.
+Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part presents similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions.
+
+The Discrete Wavelet Transform has a wide range of applications in image processing, for example denoising, compressing 
+
+\textit{** What are the possible applications of 2-D DWT - inne zastosowania w machine learning i data mining **}
+
+What information gives us these sudden variations? Thanks to those we are able to find a places where two smooth regions meets. This kind of image anomaly could be interpreted as edges.
+
+\section{Inverse Wavelet Transform}
 
 
