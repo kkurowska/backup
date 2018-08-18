@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  18 AUG 2018 00:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  18 AUG 2018 11:07
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -741,25 +741,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (introduction.tex [4
 
 
-]
-Overfull \hbox (7.81578pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/it/12 tent. In ad-di-tion, real world data sets tend to be too large
- and high-dimensional.
- []
-
-
-Overfull \hbox (4.11496pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/it/12 wavelet co-ef-fi-cients are sig-nif-i-cant in most cases. By r
-e-tain-ing se-lec-tive wavelet
- []
-
-)
-Overfull \hbox (22.04713pt too wide) in paragraph at lines 34--121
-[]\OT1/cmr/m/n/12 Classification. Re-gres-sion. Dis-tributed Data Min-ing. Sim-
-i-lar-ity Search/Indexing.
- []
-
-[5]
+]) [5]
 \openout2 = `chapter1.aux'.
 
  (chapter1.tex [6
@@ -774,19 +756,19 @@ File: wavelets_with_bottom_line.png Graphic file (type png)
 <use wavelets_with_bottom_line.png>
 Package pdftex.def Info: wavelets_with_bottom_line.png used on input line 20.
 (pdftex.def)             Requested size: 390.0pt x 217.71188pt.
-
-<DB_N.png, id=63, 1631.09375pt x 725.71124pt>
+ [7 <./wavelets_with_bottom_line.png>]
+<DB_N.png, id=75, 1631.09375pt x 725.71124pt>
 File: DB_N.png Graphic file (type png)
  <use DB_N.png>
-Package pdftex.def Info: DB_N.png used on input line 38.
+Package pdftex.def Info: DB_N.png used on input line 40.
 (pdftex.def)             Requested size: 390.0pt x 173.52092pt.
- [7 <./wavelets_with_bottom_line.png>]
-Underfull \hbox (badness 5490) in paragraph at lines 77--78
+
+Underfull \hbox (badness 5490) in paragraph at lines 81--82
 []|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and non-
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 73--90
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 77--95
  [][] 
  []
 
@@ -796,238 +778,230 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [8 <./DB_N.png>] <DWT.png, id=81, 568.1225pt x 173.64874pt>
 File: DWT.png Graphic file (type png)
  <use DWT.png>
-Package pdftex.def Info: DWT.png used on input line 122.
+Package pdftex.def Info: DWT.png used on input line 128.
 (pdftex.def)             Requested size: 390.0pt x 119.20833pt.
 
-[9 <./DWT.png (PNG copy)>] <2D_DWT.JPG, id=85, 144.54pt x 58.2978pt>
-File: 2D_DWT.JPG Graphic file (type jpg)
 
-<use 2D_DWT.JPG>
-Package pdftex.def Info: 2D_DWT.JPG used on input line 142.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] <2D_DWT.JPG, id=87, 144.54pt x 58.2978pt>
+File: 2D_DWT.JPG Graphic file (type jpg)
+ <use 2D_DWT.JPG>
+Package pdftex.def Info: 2D_DWT.JPG used on input line 148.
 (pdftex.def)             Requested size: 390.0pt x 157.30829pt.
-) [10 <./2D_DWT.JPG>]
+ [10 <./DWT.png (PNG copy)> <./2D_DWT.JPG>]) [11]
 \openout2 = `chapter2.aux'.
 
- (chapter2.tex
+ (chapter2.tex [12
+
+
+
+]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
-Overfull \hbox (12.36032pt too wide) in paragraph at lines 17--18
-[]\OT1/cmr/m/n/12 The al-go-rithm is im-ple-mented in \OT1/cmtt/m/n/12 Python \
-OT1/cmr/m/n/12 us-ing li-brary/package (?) \OT1/cmtt/m/n/12 PyWavelets\OT1/cmr/
-m/n/12 .
- []
-
-<graphs/square.png, id=89, 256.96pt x 256.96pt>
+<graphs/square.png, id=98, 256.96pt x 256.96pt>
 File: graphs/square.png Graphic file (type png)
  <use graphs/square.png>
 Package pdftex.def Info: graphs/square.png used on input line 23.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
-[11
-
-
-
- <./graphs/square.png (PNG copy)>]
-<graphs/square_db2_coeffs.png, id=94, 987.2082pt x 484.9317pt>
+[13 <./graphs/square.png (PNG copy)>]
+<graphs/square_db2_coeffs.png, id=104, 987.2082pt x 484.9317pt>
 File: graphs/square_db2_coeffs.png Graphic file (type png)
 
 <use graphs/square_db2_coeffs.png>
 Package pdftex.def Info: graphs/square_db2_coeffs.png used on input line 31.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
-<graphs/square_db2_coeffs_d.png, id=95, 987.2082pt x 484.9317pt>
+<graphs/square_db2_coeffs_d.png, id=105, 987.2082pt x 484.9317pt>
 File: graphs/square_db2_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_db2_coeffs_d.png>
 Package pdftex.def Info: graphs/square_db2_coeffs_d.png used on input line 40.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
- [12 <./graphs/square_db2_coeffs.png> <./graphs/square_db2_coeffs_d.png>]
-<graphs/square_db2.png, id=101, 256.96pt x 256.96pt>
+ [14 <./graphs/square_db2_coeffs.png> <./graphs/square_db2_coeffs_d.png>]
+<graphs/square_db2.png, id=111, 256.96pt x 256.96pt>
 File: graphs/square_db2.png Graphic file (type png)
 
 <use graphs/square_db2.png>
 Package pdftex.def Info: graphs/square_db2.png used on input line 51.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
-<graphs/square_db2_pp.png, id=102, 256.96pt x 256.96pt>
+<graphs/square_db2_pp.png, id=112, 256.96pt x 256.96pt>
 File: graphs/square_db2_pp.png Graphic file (type png)
 
 <use graphs/square_db2_pp.png>
-Package pdftex.def Info: graphs/square_db2_pp.png used on input line 62.
+Package pdftex.def Info: graphs/square_db2_pp.png used on input line 64.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
- [13 <./graphs/square_db2.png (PNG copy)> <./graphs/square_db2_pp.png (PNG copy
+ [15 <./graphs/square_db2.png (PNG copy)> <./graphs/square_db2_pp.png (PNG copy
 )>]
-<graphs/square_s10.png, id=107, 256.96pt x 256.96pt>
+<graphs/square_s10.png, id=116, 256.96pt x 256.96pt>
 File: graphs/square_s10.png Graphic file (type png)
 
 <use graphs/square_s10.png>
-Package pdftex.def Info: graphs/square_s10.png used on input line 97.
+Package pdftex.def Info: graphs/square_s10.png used on input line 99.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
-<graphs/square_s10_db1_coeffs.png, id=108, 987.2082pt x 484.9317pt>
+<graphs/square_s10_db1_coeffs.png, id=117, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_coeffs.png Graphic file (type png)
 
 <use graphs/square_s10_db1_coeffs.png>
 Package pdftex.def Info: graphs/square_s10_db1_coeffs.png used on input line 10
-6.
+8.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
-<graphs/square_s10_db1_hard_coeffs_d.png, id=109, 987.2082pt x 484.9317pt>
+<graphs/square_s10_db1_hard_coeffs_d.png, id=118, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_hard_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_s10_db1_hard_coeffs_d.png>
 Package pdftex.def Info: graphs/square_s10_db1_hard_coeffs_d.png used on input 
-line 115.
+line 117.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/square_s10_db1_soft_coeffs_d.png, id=110, 987.2082pt x 484.9317pt>
+<graphs/square_s10_db1_soft_coeffs_d.png, id=119, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_soft_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_s10_db1_soft_coeffs_d.png>
 Package pdftex.def Info: graphs/square_s10_db1_soft_coeffs_d.png used on input 
-line 122.
+line 124.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/square_s10_db1_hard_pp.png, id=111, 256.96pt x 256.96pt>
+[16 <./graphs/square_s10.png (PNG copy)> <./graphs/square_s10_db1_coeffs.png>]
+<graphs/square_s10_db1_hard_pp.png, id=124, 256.96pt x 256.96pt>
 File: graphs/square_s10_db1_hard_pp.png Graphic file (type png)
 
 <use graphs/square_s10_db1_hard_pp.png>
 Package pdftex.def Info: graphs/square_s10_db1_hard_pp.png used on input line 1
-30.
+32.
 (pdftex.def)             Requested size: 105.30035pt x 105.29938pt.
 
-<graphs/square_s10_db1_soft_pp.png, id=112, 256.96pt x 256.96pt>
+<graphs/square_s10_db1_soft_pp.png, id=125, 256.96pt x 256.96pt>
 File: graphs/square_s10_db1_soft_pp.png Graphic file (type png)
 
 <use graphs/square_s10_db1_soft_pp.png>
 Package pdftex.def Info: graphs/square_s10_db1_soft_pp.png used on input line 1
-30.
+32.
 (pdftex.def)             Requested size: 105.30035pt x 105.29938pt.
- [14 <./graphs/square_s10.png (PNG copy)> <./graphs/square_s10_db1_coeffs.png>]
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 1931) has occurred while \output is active []
-
- [15 <./graphs/square_s10_db1_hard_coeffs_d.png> <./graphs/square_s10_db1_soft_
-coeffs_d.png>] <graphs/diamond_s16.png, id=122, 363.3575pt x 363.3575pt>
+[17 <./graphs/square_s10_db1_hard_coeffs_d.png> <./graphs/square_s10_db1_soft_c
+oeffs_d.png>] <graphs/diamond_s16.png, id=131, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16.png Graphic file (type png)
 
 <use graphs/diamond_s16.png>
-Package pdftex.def Info: graphs/diamond_s16.png used on input line 147.
+Package pdftex.def Info: graphs/diamond_s16.png used on input line 149.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s10.png, id=123, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10.png, id=132, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10.png Graphic file (type png)
 
 <use graphs/diamond_s10.png>
-Package pdftex.def Info: graphs/diamond_s10.png used on input line 147.
+Package pdftex.def Info: graphs/diamond_s10.png used on input line 149.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s4.png, id=124, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4.png, id=133, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4.png Graphic file (type png)
 
 <use graphs/diamond_s4.png>
-Package pdftex.def Info: graphs/diamond_s4.png used on input line 147.
+Package pdftex.def Info: graphs/diamond_s4.png used on input line 149.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s16_db1_95_pp.png, id=125, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_95_pp.png, id=134, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_95_pp.png>
-Package pdftex.def Info: graphs/diamond_s16_db1_95_pp.png used on input line 15
-7.
+Package pdftex.def Info: graphs/diamond_s16_db1_95_pp.png used on input line 16
+1.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s10_db1_95_pp.png, id=126, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_95_pp.png, id=135, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_95_pp.png>
-Package pdftex.def Info: graphs/diamond_s10_db1_95_pp.png used on input line 15
-7.
+Package pdftex.def Info: graphs/diamond_s10_db1_95_pp.png used on input line 16
+1.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s4_db1_95_pp.png, id=127, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_95_pp.png, id=136, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_95_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_95_pp.png used on input line 157
+Package pdftex.def Info: graphs/diamond_s4_db1_95_pp.png used on input line 161
 .
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/diamond_s16_db1_99_pp.png, id=128, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_99_pp.png, id=137, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_99_pp.png>
 Package pdftex.def Info: graphs/diamond_s16_db1_99_pp.png used on input line 16
-5.
+9.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s10_db1_99_pp.png, id=129, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_99_pp.png, id=138, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_99_pp.png>
 Package pdftex.def Info: graphs/diamond_s10_db1_99_pp.png used on input line 16
-5.
+9.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s4_db1_99_pp.png, id=130, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_99_pp.png, id=139, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_99_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_99_pp.png used on input line 165
+Package pdftex.def Info: graphs/diamond_s4_db1_99_pp.png used on input line 169
 .
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/diamond_s16_db1_98_pp.png, id=131, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_98_pp.png, id=140, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_98_pp.png>
 Package pdftex.def Info: graphs/diamond_s16_db1_98_pp.png used on input line 17
-3.
+7.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s10_db1_98_pp.png, id=132, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_98_pp.png, id=141, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_98_pp.png>
 Package pdftex.def Info: graphs/diamond_s10_db1_98_pp.png used on input line 17
-3.
+7.
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
-<graphs/diamond_s4_db1_98_pp.png, id=133, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_98_pp.png, id=142, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_98_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_98_pp.png used on input line 173
+Package pdftex.def Info: graphs/diamond_s4_db1_98_pp.png used on input line 177
 .
 (pdftex.def)             Requested size: 105.30035pt x 105.29889pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [16 <./graphs/square_s10_db1_hard_pp.png (PNG copy)> <./graphs/square_s10_db1
+) [18 <./graphs/square_s10_db1_hard_pp.png (PNG copy)> <./graphs/square_s10_db1
 _soft_pp.png (PNG copy)> <./graphs/diamond_s16.png (PNG copy)> <./graphs/diamon
-d_s10.png (PNG copy)> <./graphs/diamond_s4.png (PNG copy)>] [17 <./graphs/diamo
+d_s10.png (PNG copy)> <./graphs/diamond_s4.png (PNG copy)>] [19 <./graphs/diamo
 nd_s16_db1_95_pp.png (PNG copy)> <./graphs/diamond_s10_db1_95_pp.png (PNG copy)
 > <./graphs/diamond_s4_db1_95_pp.png (PNG copy)> <./graphs/diamond_s16_db1_99_p
 p.png (PNG copy)> <./graphs/diamond_s10_db1_99_pp.png (PNG copy)> <./graphs/dia
@@ -1036,33 +1010,33 @@ mond_s4_db1_99_pp.png (PNG copy)> <./graphs/diamond_s16_db1_98_pp.png (PNG copy
 pp.png (PNG copy)>]
 \openout2 = `chapter3.aux'.
 
- (chapter3.tex [18
+ (chapter3.tex [20
 
 
 
 ]
 Chapter 3.
-) [19] [20
+) [21] [22
 
 
 ] (document_KK.lof)
 \tf@lof=\write4
 \openout4 = `document_KK.lof'.
 
- [21] [22
+ [23] [24
 
 ] (document_KK.lot)
 \tf@lot=\write5
 \openout5 = `document_KK.lot'.
 
  (document_KK.bbl
-[23] [24
+[25] [26
 
 ])
 
 LaTeX Warning: Citation `DataManing' undefined on input line 133.
 
-[25] (document_KK.aux (introduction.aux) (chapter1.aux) (chapter2.aux)
+[27] (document_KK.aux (introduction.aux) (chapter1.aux) (chapter2.aux)
 (chapter3.aux))
 
 LaTeX Warning: There were undefined references.
@@ -1071,32 +1045,35 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5760 strings out of 493334
  83798 string characters out of 3139251
- 158040 words of memory out of 3000000
+ 158042 words of memory out of 3000000
  9114 multiletter control sequences out of 15000+200000
  11924 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,47p,977b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,47p,798b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document_KK.pdf (25 pages, 941585 bytes).
+e1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on document_KK.pdf (27 pages, 961619 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 237 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

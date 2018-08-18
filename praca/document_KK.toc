@@ -1,18 +1,17 @@
 \contentsline {chapter}{Introduction}{5}
 \contentsline {chapter}{Chapter\ 1\relax .\kern .5em Wavelets theory}{7}
-\contentsline {section}{\numberline {1.1\relax .\kern .5em }Daubechies wavelets}{7}
+\contentsline {section}{\numberline {1.1\relax .\kern .5em }Haar and Daubechies wavelets}{7}
 \contentsline {section}{\numberline {1.2\relax .\kern .5em }Wavelet Transform}{8}
-\contentsline {subsection}{\numberline {1.2.1\relax .\kern .5em }Wavelet transform vs Fourier transform}{8}
-\contentsline {section}{\numberline {1.3\relax .\kern .5em }Discrete Wavelet transform}{8}
-\contentsline {section}{\numberline {1.4\relax .\kern .5em }2-D Discrete Wavelet transform}{9}
-\contentsline {section}{\numberline {1.5\relax .\kern .5em }Inverse Wavelet Transform}{10}
-\contentsline {chapter}{Chapter\ 2\relax .\kern .5em Edge detection}{11}
-\contentsline {section}{\numberline {2.1\relax .\kern .5em }Implementation of an algorithm}{11}
-\contentsline {section}{\numberline {2.2\relax .\kern .5em }Thresholding}{13}
-\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Hard or soft thresholding}{14}
-\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Setting the threshold}{15}
-\contentsline {section}{\numberline {2.3\relax .\kern .5em }Selection of a wavelet type}{16}
-\contentsline {chapter}{Chapter\ 3\relax .\kern .5em }{19}
-\contentsline {chapter}{List of Figures}{21}
-\contentsline {chapter}{List of Tables}{23}
-\contentsline {chapter}{Bibliography}{25}
+\contentsline {section}{\numberline {1.3\relax .\kern .5em }Discrete Wavelet transform}{9}
+\contentsline {section}{\numberline {1.4\relax .\kern .5em }2-D Discrete Wavelet transform}{10}
+\contentsline {section}{\numberline {1.5\relax .\kern .5em }Inverse Wavelet Transform}{11}
+\contentsline {chapter}{Chapter\ 2\relax .\kern .5em Edge detection}{13}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Implementation of an algorithm}{13}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Thresholding}{15}
+\contentsline {subsection}{\numberline {2.2.1\relax .\kern .5em }Hard or soft thresholding}{16}
+\contentsline {subsection}{\numberline {2.2.2\relax .\kern .5em }Setting the threshold}{17}
+\contentsline {section}{\numberline {2.3\relax .\kern .5em }Selection of a wavelet type}{18}
+\contentsline {chapter}{Chapter\ 3\relax .\kern .5em }{21}
+\contentsline {chapter}{List of Figures}{23}
+\contentsline {chapter}{List of Tables}{25}
+\contentsline {chapter}{Bibliography}{27}
