@@ -1,8 +1,18 @@
 \chapter{Wavelets theory}
-A ''wavelet'' literally means a small wave. This term says a lot about its nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported. Additionally, the wavelet has zero mean.
+A ''wavelet'' literally means a small wave. This term says a lot about its nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported.
 
 \begin{defn}
-Wavelets are created by scaling and shifting of the, so called, mother wavelet $\psi(t)$. The child wavelets are defined as
+A mother wavelet is a function $\psi(t)$, which satisfies the condition that the set of functions
+
+\begin{equation}
+\left\{\psi(2^j t-m),\ j,m\in\mathbb{Z}\right\}
+\end{equation}
+
+is an orthonormal basis of $\mathbf{L}^2(\mathbb{R})$.
+\end{defn}
+
+\begin{defn}
+Wavelet functions are created by scaling and shifting of the mother wavelet $\psi(t)$. They are defined as
 
 \begin{equation}
 \label{eq:wavelets}
@@ -10,7 +20,6 @@ Wavelets are created by scaling and shifting of the, so called, mother wavelet $
 \end{equation}
 
 where $a$ is a scale parameter and $b$ translation parameter.
-
 \end{defn}
 
 There are plenty of different mother wavelets, for example
@@ -22,18 +31,45 @@ There are plenty of different mother wavelets, for example
 	\label{fig:wavelets}
 \end{figure}
 
-\textit{** I'll add more about wavelets properties - orthogonal basis, decorrelated coefficients, vanishing moments, compact support. And how those properties can be useful in data mining. **}
+The wavelet functions have specific properties which are useful in data analysis. According to the \cite{WaveletMethodsInDataMining} article, the most important are:
+
+\begin{itemize}
+\item Vanishing moments. Wavelet has $n$ vanishing moments, when $\int t^j \psi(t) dt=0$ for $j=0,1,\ldots,n-1$. For all wavelets at least the first moment, the mean value, is equal zero. Particular wavelets have more vanishing moments, e.g. Daubechies family, the $Daub4$ and $Daub20$ presented on the figure \ref{fig:wavelets} has respectively, 2 and 10 vanishing moments. This property is also known as approximation order, because for the part of data which are represented as n-degree polynomials, the wavelet coefficients are also equal zero (according to the definition \ref{def:CWT}). So the bigger $n$, the more data is neglected. \textit{** Add that the bigger coeffs are more significant? **}
+
+\item Compact support. Wavelets domain is a compact set, most of the time it is a finite interval. This property protects from leaving a data region during wavelet processing.
+
+\item Decorrelated coefficients. Wavelet transformations diminish the time correlation, thus the wavelet coefficients are less depended than the analysed data.
+\end{itemize}
 
 
 \section{Haar and Daubechies wavelets}
 
-\textit{** Add that db1 is the same as Haar. Add little more about specific properties for this wavelet family. **}
-
-Each type of wavelet function is more suitable for different applications. The best for image analysis are the Daubechies wavelets. 
+Each type of wavelet function is more suitable for different applications. As it is shown in \cite{APrimerOnWavelets}, the Daubechies wavelets are very useful in compression, denoising and enhancement audio signals or images.
 
 \begin{defn}
-Daubechies wavelets are collection of orthogonal and compactly supported functions. A denotation for those wavelets is $dbN$, where $N$ means a maximal number of vanishing moments.
+Daubechies wavelets are collection of orthogonal and compactly supported functions. A denotations for those wavelets are $dbn$ or $DaubN$, where $n$ is the number of vanishing moments and $N=2n$. Moreover, the support in on the interval $[0, 2n-1]$.
 \end{defn}
+
+The Haar wavelet is the simplest of Daubechies ($db1$), and also of all, wavelets. The mother function is illustrated on the graph \ref{fig:haar} and has the following formula
+
+\begin{equation}
+\psi(t)=
+\begin{cases}
+1, & \text{for } 0 \leq t < \frac{1}{2}, \\
+-1, & \text{for } \frac{1}{2} \leq t < 1, \\
+0, & \text{otherwise}.
+\end{cases}
+\end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{Haar_wavelet.png}
+	\caption{The Haar wavelet.}
+	\label{fig:haar}
+\end{figure}
+
+Thanks to this simple form the Haar wavelet has wide application in signal and image analysis.
+However, the simplest wavelet is not always enough. There are cases which require more complex wavelets. Examples of those Daubechies wavelets are shown on the figure \ref{fig:db_wavelets}. We can see that the bigger $n$, the function is smoother and more regular.
 
 \begin{figure}[h]
 	\centering
@@ -44,12 +80,13 @@ Daubechies wavelets are collection of orthogonal and compactly supported functio
 
 \section{Wavelet Transform}
 
-Generally, integral transforms are useful in data processing. Their idea is to convert data into another domain, where it is easier to manipulate them, finding desired informations, etc. Finally, the results are transformed back to the original domain by inverse integral transform.
+Generally, integral transforms are useful in data processing. The idea is to convert data into another domain, where it is easier to manipulate them, finding desired informations, etc. Finally, the results are transformed back to the original domain by inverse integral transform.
 
 We can define integral transform based on the wavelet functions - Wavelet Transform.
 However, the most popular kind of integral transform is Fourier Transform. Here the question arises, what are the differences between both operators. Lets start from the definitions.
 
 \begin{defn}
+\label{def:CWT}
 Continuous Wavelet Transform is expressed by the formula
 
 \begin{equation}
@@ -154,7 +191,7 @@ Recall that the outcome of Low Pass Filter in the previous case was the main sig
 
 \section{Inverse Wavelet Transform}
 
-Majority applications of Wavelet Transform assume that data is converted to wavelet domain and ten we can get the desired information. Although, we must return to the original domain for the information to be useful. The Inverse Wavelet Transform allows for such operation.
+Majority applications of Wavelet Transform assume that data is converted to wavelet domain and then we can receive the desired information. Although, we must return to the original domain for the information to be useful. The Inverse Wavelet Transform allows for such operation.
 
 \begin{defn}
 Inverse Discrete Wavelet Transform is defined as
@@ -166,4 +203,4 @@ y(t) = \sum_{j=1}^{K} \sum_{m=0}^{2^{K-j}-1} d^{(j,m)} 2^{-\frac{j}{2}} \psi\lef
 where $y(t)$ is reconstruction of the input data and $d^{(j,m)}$ coefficients of wavelet transform. The $\psi_0$ is an average value of $y(t)$ over $t \in [0, 2^K-1]$. This parameter can be approximated by zero, without loss of generality.
 \end{defn}
 
-Thus, now we are able to transform data to a wavelet domain, process them simply and efficiently. As well as, we can back to the original domain to read the obtained results.
+Summarizing, now we are able to transform data to a wavelet domain. Process them simply and efficiently, as well as, we can back to the original domain to read the obtained results.
