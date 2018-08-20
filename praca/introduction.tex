@@ -1,46 +1,38 @@
 \chapter*{Introduction}
 
-\textit{ ** Few words about my thesis...
-Generally what is a data mining, what are the wavelets, what are the applications in data mining and finally, what is the main purpose - edge detection. **}
+Data mining is a~process of searching big datasets for transparent and useful regularities or relationships. 
+Nowadays this field of study has become important, because people gather a~huge amount of, often unstructured, data. High-\allowbreak-dimensionality, missing values or noisiness are only some of the problems that we have to face in data mining tasks. 
 
-%\textit{ ** VERY GOOD PARAGRAPH - JUST NEEDS TO BE WRITE WITH DIFFERENT WORDS **}
-%	
-%\textit{ Real world data sets are usually not directly suitable for performing Data
-%Mining algorithms. They contain noise, missing values and may be inconsistent.
-%In addition, real world data sets tend to be too large and high-dimensional.
-%Wavelets provide a way to estimate the underlying function from the data. With
-%the vanishing moment property of wavelets, we know that only some wavelet
-%coefficients are significant in most cases. By retaining selective wavelet coefficients,
-%wavelet transform could then be applied to denoising and dimensionality
-%reduction. Moreover, since wavelet coefficients are generally decorrelated,
-%we could transform the original data into wavelet domain and then carry out
-%Data Mining tasks.}
+Wavelets, thanks to their properties, can be really helpful in this area. First of all, there exist efficient algorithms for wavelet transform. Low computational complexity is a~big advantage in case of big data analysis. Secondly, the vanishing moments property, described in chapter~\ref{ch:theory}, provides distinction in importance of the wavelet coefficients, the bigger are more relevant. Thus, by removing those less significant we can obtain the trend of analysed data. Also, the wavelet coefficients are mainly decorrelated, hence transformation data to wavelet domain facilitates conducting data mining algorithms.
+ 
+%the wavelet transform supplies the high and low frequency resolutions.
 
-Nowadays, people gather a huge amount of, often unstructured, data. High-\allowbreak-dimensionality, missing values or noisiness are only some of the problems that we have to face in data mining. Wavelets can be really helpful in this area, thanks to their properties. First of all, there exist efficient algorithms for wavelet transform. Low computational complexity is a big advantage in case of data mining analysis.
-
-%At this point wavelets are usually the solution. Thanks to their properties we are able to underlying function from the data.
-%Then Data Mining tasks are way easier to carry out. 
-%But how it is done? Every wavelet consists with many different wavelet coefficients.
-%We can specify, thanks to vanishing moment property, which of wavelet coefficients are significant in our case.
-%Knowing this we can perform wavelet transform which makes our data more less noisy and dimensional reduced.
-%It is possible because wavelet coefficients are generally decorrelated. \newline
-
-Pre-processing:
+Data mining is composed of a~few problems: data management, pre-\allowbreak{processing}, main mining process and post-processing. Wavelets are especially useful in two of them: pre-processing and core process. Before the main analysis, it is often required to clear the data from noisiness or simplify them. This stage is known as pre-\allowbreak{processing}. The most common tasks are:
 \begin{itemize}
-\item Denoising signals and images. The Wavelet noise reduction - transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
+\item Denoising signals and images. The Wavelet noise reduction -- transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
 
-\item Dimensionality reduction. The idea is to simplify data, by getting rid off the less relevant information. In a wavelet domain we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
+\item Dimensionality reduction. The idea is to simplify data by getting rid off the less relevant information. In a~wavelet domain we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
 \end{itemize}
 
-
-Machine learning processing:
+\noindent The core analysis is often carried out with machine learning algorithms. Here are the examples of processing types:
 \begin{itemize}
 \item Clustering. Low frequency parts are correlated with regions of objects concentration and the high frequency parts correspond to the areas with sudden changes in the objects distribution. Thus, clustering can be conducted by recognising correlated components in the wavelet domain.
 
-\item Classification. Wavelet-base algorithm in machine learning (2-D DWT) developed by Castelli 1996. Notable faster than the classic one.
+\item Classification. The idea is to determine the class for the analysed object. Wavelet-base algorithm in machine learning was presented by Castelli in 1996 \cite{castelli}. This algorithm is notable faster than the classic one.
 
-\item Regression. Uses to predict future values based on historical data. Wavelet approach is the non-parametric regression. Similar to the dimensionality reduction case.
+\item Regression. Uses to predict future values based on historical data. Wavelet approach is the non-parametric regression. This case is similar to the dimensionality reduction.
 
-\item Distributed Data Mining. Thanks to the orthogonality, data mining tasks can be carried out on smaller subsets of data independently and than results can be combined.
+%\item Distributed Data Mining. Thanks to the orthogonality, data mining tasks can be carried out on smaller subsets of data independently and than results can be combined.
 \end{itemize}
+
+\section*{Overview}
+The wavelet theory is introduced in chapter~\ref{ch:theory}. The special attention is paid to the Daubechies family of wavelets, which are widely applied in data analysis. Also, the definitions of forward and backward Wavelet Transforms are characterized. There is also described, the most important in image analysis, 2-Dimensional Discrete Wavelet Transform.
+
+The chapter~\ref{ch:edge_detection} treats about the main goal of the thesis, edge detection problem, as an example of the dimensionality reduction in pre-processing. The wavelet-based algorithm is introduced and developed. Moreover, sections~\ref{sec:threshold} and~\ref{sec:wavelet_type} are about selecting the parameters -- threshold and wavelet type -- for the various images.
+
+Ultimately, chapter~\ref{ch:medical_application} presents the pre-processing application in the problem of classification biomedical images. The feature extraction is performed using 2-D Discrete Wavelet Transform and specific filters. There are examples of the biomedical images with the extracted features using the algorithm from the chapter~\ref{ch:edge_detection}.
+
+
+
+
 

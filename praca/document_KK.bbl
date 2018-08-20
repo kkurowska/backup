@@ -1,14 +1,24 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{DataMining}
+
+\newblock {\em Data Mining and Knowledge Discovery Handbook}.
+\newblock Springer, 2010.
+
+\bibitem{castelli}
+V.~{Castelli, C. Li, J. Turek, I. Kontoyiannis}.
+\newblock {\em Progressive classification in the compressed domain for large
+  EOS satellite databases}, Apr. 1996.
 
 \bibitem{EdgeDetection}
 V.~R. Chaganti.
 \newblock Edge detection of noisy images using 2-d discrete wavelet transform.
 \newblock Master's thesis, The Florida State University, 2005.
 
-\bibitem{WaveletNotes}
-B.~{Kessler, G. Payne, W. Polyzou}.
-\newblock Wavelet notes.
-\newblock The University of Iowa, Feb. 2008.
+\bibitem{EdgeDetectionReview}
+Dharampal{, V. Mutneja}.
+\newblock Methods of image edge detection: A review.
+\newblock {\em Journal of Electrical \& Electronic Systems}, 2015.
 
 \bibitem{BiomedicalImages}
 S.~{Lahmiri, M. Boukadoum}.
@@ -32,6 +42,10 @@ T.~{Li, S. Ma, M. Ogihara}.
 J.~S. Walker.
 \newblock {\em A Primer on Wavelets and their Scientific Applications}.
 \newblock Taylor \& Francis Group, second edition, 2008.
+
+\bibitem{EdgeDetectionAlgorithm}
+C.~Yuriy.
+\newblock Edge detection in images with wavelet transform, Nov. 2007.
 
 \bibitem{WaveletSupportVectorMachine}
 L.~{Zhang, W. Zhou, L. Jiao}.

@@ -1,36 +1,36 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Different types of wavelets.\relax }}{7}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The Haar wavelet.\relax }}{8}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Daubechies wavelets.\relax }}{9}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Discrete Wavelet transform on a signal $x(n)$.\relax }}{11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces 2-D Discrete Wavelet transform on an image.\relax }}{11}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Different types of wavelets. \newline Source: https://aharchaou.com/from-fourier-to-curvelets/.\relax }}{7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The Haar wavelet. \newline Source: https://en.wikipedia.org/wiki/Haar\_wavelet.\relax }}{9}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Daubechies wavelets. \newline Source: http://radio.feld.cvut.cz/matlab/toolbox/wavelet/ch01\_31a.html.\relax }}{9}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Discrete Wavelet transform on a\nobreakspace {}signal $x(n)$. \newline Source: https://en.wikipedia.org/wiki/Discrete\_wavelet\_transform.\relax }}{11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces 2-D Discrete Wavelet transform on an image. \newline Source: https://www.hindawi.com/journals/jme/2013/104684/.\relax }}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces An initial image - a white square.\relax }}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An initial image -- a\nobreakspace {}white square.\relax }}{13}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 2-D DWT coefficients.\relax }}{14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 2-D DWT coefficients with removed the LL part.\relax }}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 2-D DWT coefficients with removed the LL part.\relax }}{14}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces A reconstructed image showing the edges.\relax }}{15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The edges of the square image after post-processing.\relax }}{16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The edges of the square image after post-processing.\relax }}{15}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces A noisy square image.\relax }}{16}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 2-D DWT coefficients.\relax }}{17}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 2-D DWT coefficients.\relax }}{16}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces 2-D DWT coefficients after hard thresholding.\relax }}{17}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces 2-D DWT coefficients after soft thresholding.\relax }}{18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces 2-D DWT coefficients after soft thresholding.\relax }}{17}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Results of edge detection with hard and soft thresholding.\relax }}{18}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces The initial images of diamond with different noise level.\relax }}{19}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The initial images of diamond with different noise level.\relax }}{18}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.95 quantile.\relax }}{19}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.99 quantile.\relax }}{20}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.99 quantile.\relax }}{19}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces The recognized edges for the diamonds with $\lambda $ equals 0.98 quantile.\relax }}{20}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces A man with a camera and detected edges using Haar wavelet.\relax }}{21}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces A man with a camera - detected edges using selected Daubechies wavelets.\relax }}{21}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces A simple square - detected edges using selected Daubechies wavelets.\relax }}{22}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces A noisy rotated square - detected edges using selected Daubechies wavelets.\relax }}{22}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces A frog - detected edges using selected Daubechies wavelets.\relax }}{23}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces A man with a\nobreakspace {}camera and detected edges using Haar wavelet.\relax }}{20}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces A man with a\nobreakspace {}camera -- detected edges using selected Daubechies wavelets.\relax }}{21}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces A simple square -- detected edges using selected Daubechies wavelets.\relax }}{22}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces A noisy rotated square -- detected edges using selected Daubechies wavelets.\relax }}{22}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces A frog -- detected edges using selected Daubechies wavelets.\relax }}{23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Brain MRI - a small tumour.\relax }}{26}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Brain MRI - a tumour.\relax }}{26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Brain MRI -- a\nobreakspace {}small tumour.\relax }}{26}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Brain MRI -- a\nobreakspace {}tumour.\relax }}{26}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Lungs.\relax }}{27}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A broken bone - arm.\relax }}{27}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A broken bone - leg.\relax }}{27}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A broken bone -- arm.\relax }}{27}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A broken bone -- leg.\relax }}{27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

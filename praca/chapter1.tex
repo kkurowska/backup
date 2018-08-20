@@ -1,9 +1,9 @@
 \chapter{Wavelets theory}
 \label{ch:theory}
-A ''wavelet'' literally means a small wave. This term says a lot about its nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported.
+A ``wavelet'' literally means a~small wave. This term says a~lot about its nature. Wavelets are a~family of functions which oscillates like wave and should be compactly supported.
 
 \begin{defn}
-A mother wavelet is a function $\psi(t)$, which satisfies the condition that the set of functions
+A mother wavelet is a~function $\psi(t)$, which satisfies the condition that the set of functions
 
 \begin{equation}
 \left\{\psi(2^j t-m),\ j,m\in\mathbb{Z}\right\}
@@ -20,7 +20,7 @@ Wavelet functions are created by scaling and shifting of the mother wavelet $\ps
 \psi^{(a,b)}(t)=|a|^{-\frac{1}{2}} \psi\left(\frac{t-b}{a}\right),\ a>0,
 \end{equation}
 
-where $a$ is a scale parameter and $b$ translation parameter.
+where $a$ is a~scale parameter and $b$ translation parameter.
 \end{defn}
 
 There are plenty of different mother wavelets, for example
@@ -28,16 +28,23 @@ There are plenty of different mother wavelets, for example
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{wavelets_with_bottom_line.png}
-	\caption{Different types of wavelets.}
+	\caption{Different types of wavelets. \newline
+		Source: https://aharchaou.com/from-fourier-to-curvelets/.}
 	\label{fig:wavelets}
 \end{figure}
 
-The wavelet functions have specific properties which are useful in data analysis. According to the \cite{WaveletMethodsInDataMining} article, the most important are:
+According to T. Li, S. Ma and M. Ogihara, wavelets should meet a~set of important properties \cite{WaveletMethodsInDataMining}. The mentioned properties are:
 
 \begin{itemize}
-\item Vanishing moments. Wavelet has $n$ vanishing moments, when $\int t^j \psi(t) dt=0$ for $j=0,1,\ldots,n-1$. For all wavelets at least the first moment, the mean value, is equal zero. Particular wavelets have more vanishing moments, e.g. Daubechies family, the $Daub4$ and $Daub20$ presented on the figure \ref{fig:wavelets} has respectively, 2 and 10 vanishing moments. This property is also known as approximation order, because for the part of data which are represented as n-degree polynomials, the wavelet coefficients are also equal zero (according to the definition \ref{def:CWT}). So the bigger $n$, the more data is neglected.
+\item Vanishing moments. Wavelet has $n$ vanishing moments, when
 
-\item Compact support. Wavelets domain is a compact set, most of the time it is a finite interval. This property protects from leaving a data region during wavelet processing.
+\begin{equation}
+\int_\Omega t^j \psi(t) dt=0 \text{, for } j=0,1,\ldots,n-1.
+\end{equation}
+
+For all wavelets at least the first moment, the mean value, is equal zero. Particular wavelets have more vanishing moments, e.g. Daubechies family, the $Daub4$ and $Daub20$ presented on the figure~\ref{fig:wavelets} has respectively, 2 and 10 vanishing moments. This property is also known as approximation order, because for the part of data which are represented as n-degree polynomials, the wavelet coefficients are also equal zero (according to the definition~\ref{def:CWT}). So the bigger $n$, the more data is neglected.
+
+\item Compact support. Wavelets domain is a~compact set, most of the time it is a~finite interval. This property protects from leaving a~data region during wavelet processing.
 
 \item Decorrelated coefficients. Wavelet transformations diminish the time correlation, thus the wavelet coefficients are less depended than the analysed data.
 \end{itemize}
@@ -45,13 +52,13 @@ The wavelet functions have specific properties which are useful in data analysis
 
 \section{Haar and Daubechies wavelets}
 
-Each type of wavelet function is more suitable for different applications. As it is shown in \cite{APrimerOnWavelets}, the Daubechies wavelets are very useful in compression, denoising and enhancement audio signals or images.
+Each type of wavelet function is more suitable for different applications. As it is shown by J. Walker \cite{APrimerOnWavelets}, the Daubechies wavelets are very useful in compression, denoising and enhancement audio signals or images.
 
 \begin{defn}
-Daubechies wavelets are collection of orthogonal and compactly supported functions. A denotations for those wavelets are $dbn$ or $DaubN$, where $n$ is the number of vanishing moments and $N=2n$. Moreover, the support in on the interval $[0, 2n-1]$.
+Daubechies wavelets are collection of orthogonal and compactly supported functions. Each of the Daubechies mother wavelets is denoted by $dbn$ or $DaubN$, where $n\in\mathbb{N}$ is the number of vanishing moments and $N=2n$. Moreover, the support in on the interval $[0, 2n-1]$.
 \end{defn}
 
-The Haar wavelet is the simplest of Daubechies ($db1$), and also of all, wavelets. The mother function is illustrated on the graph \ref{fig:haar} and has the following formula
+The Haar wavelet is the simplest of Daubechies ($db1$), and also of all, wavelets. The mother function is illustrated on the graph~\ref{fig:haar} and has the following formula
 
 \begin{equation}
 \psi(t)=
@@ -65,17 +72,19 @@ The Haar wavelet is the simplest of Daubechies ($db1$), and also of all, wavelet
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.5\textwidth]{Haar_wavelet.png}
-	\caption{The Haar wavelet.}
+	\caption{The Haar wavelet. \newline
+		Source: https://en.wikipedia.org/wiki/Haar\_wavelet.}
 	\label{fig:haar}
 \end{figure}
 
 Thanks to this simple form the Haar wavelet has wide application in signal and image analysis.
-However, the simplest wavelet is not always enough. There are cases which require more complex wavelets. Examples of those Daubechies wavelets are shown on the figure \ref{fig:db_wavelets}. We can see that the bigger $n$, the function is smoother and more regular.
+However, the simplest wavelet is not always enough. There are cases which require more complex wavelets. Examples of those Daubechies wavelets are shown on the figure~\ref{fig:db_wavelets}. We can see that the bigger~$n$, the function is smoother and more regular.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{DB_N.png}
-	\caption{Daubechies wavelets.}
+	\caption{Daubechies wavelets. \newline
+		Source: http://radio.feld.cvut.cz/matlab/toolbox/wavelet/ch01\_31a.html.}
 	\label{fig:db_wavelets}
 \end{figure}
 
@@ -83,7 +92,7 @@ However, the simplest wavelet is not always enough. There are cases which requir
 
 Generally, integral transforms are useful in data processing. The idea is to convert data into another domain, where it is easier to manipulate them, finding desired informations, etc. Finally, the results are transformed back to the original domain by inverse integral transform.
 
-We can define integral transform based on the wavelet functions - Wavelet Transform.
+We can define integral transform based on the wavelet functions -- Wavelet Transform.
 However, the most popular kind of integral transform is Fourier Transform. Here the question arises, what are the differences between both operators. Lets start from the definitions.
 
 \begin{defn}
@@ -108,32 +117,32 @@ Y(f)=\int_{-\infty}^{\infty} y(t) e^{-i\omega t} dt,
 where $y(t)$ is time domain signal and $Y(f)$ is frequency domain signal.
 \end{defn}
 
-The most important differences are presented in the table below.
+The most important differences are presented in the table 1.1 on page \pageref{tab}.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \toprule
 \textbf{ Wavelet transform} & \textbf{Fourier transform}
 \\ \midrule
-Suitable for stationary and non-\allowbreak -stationary signals 
+Suitable for stationary and non-\allowbreak{stationary} signals 
 & Suitable for stationary signals 
 \\ \midrule
 High time and frequency resolution
 & Zero time resolution and very high frequency resolution     
 \\ \midrule
 Very suitable for studying the local behaviours of the signal
-& No suitable  
+& Not suitable  
 \\ \midrule
 Scaled and translated mother wavelets
 & Sine and cosine waves
 \\ \bottomrule
 \end{tabular}
-%\label{tab:wt_vs_ft}
+\label{tab}
 \caption{The comparison of Wavelet and Fourier Transform.}
 \end{table}
 
-The obvious distinction between both transforms is the type of function. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets. Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. However, the Wavelet transform is localized in space and time, so it can be used to detect trends or sudden changes in signals and images. Moreover, wide range of wavelet functions is a main advantage of wavelet analysis, because we can adjust the type of wavelet to the specific case and thank to that obtain more accurate results.
+The obvious distinction between both transforms is the type of function. In Fourier case there are sine and cosine functions, wherein wavelet transform uses wavelets. Sine function oscillates on the whole real axis, thus it cannot represent abrupt changes. However, the Wavelet transform is localized in space and time, so it can be used to detect trends or sudden changes in signals and images. Moreover, wide range of wavelet functions is a~main advantage of wavelet analysis, because we can adjust the type of wavelet to the specific case and thank to that obtain more accurate results.
 
 \section{Discrete Wavelet transform}
 
@@ -143,9 +152,7 @@ There are two types of Wavelet Transform:
 	\item Discrete Wavelet Transform (DWT).
 \end{itemize}
 
-The Discrete Wavelet Transform has a wide range of applications in denoising and compressing signals and images.
-
-\textit{** More info about applications in pre-processing and machine learning is currently in the Introduction. I'm not sure where to finally put it **}
+The Discrete Wavelet Transform has a~wide range of applications in denoising and compressing signals and images.
 
 Scale and translation parameters are defined as
 
@@ -159,12 +166,13 @@ Therefore, assuming that $0 \leq t < 2^K$, $K \in \mathbb{Z}$, the coefficients 
 d^{(j,m)}=\sum_{t=0}^{2^K -1} y(t) 2^{-\frac{j}{2}} \psi\left(2^{-j}t - m\right).
 \end{equation}
 
-The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $g(n)$ - low pass filter (LPF) and $h(n)$ - high pass filter (HPF). The LPF captures a part with lower frequencies which refers to the main signal. Whereas, the HPF captures higher frequencies - a noise of the signal. Subsequently, both parts are downsampled by a factor of 2. This decomposition can be repeated on the LPF part of the signal. Hence, the next levels of DWT coefficients.
+The figure~\ref{fig:DWT} on a~page \pageref{fig:DWT} shows how DWT works. Discrete Wavelet Transform splits signal with two filters: $g(n)$ -- low pass filter (LPF) and $h(n)$ -- high pass filter (HPF). The LPF captures a~part with lower frequencies which refers to the main signal. Whereas, the HPF captures higher frequencies -- a~noise of the signal. Subsequently, both parts are downsampled by a~factor of~2. This decomposition can be repeated on the LPF part of the signal. Hence, the next levels of DWT coefficients.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{DWT.png}
-	\caption{Discrete Wavelet transform on a signal $x(n)$.}
+	\caption{Discrete Wavelet transform on a~signal $x(n)$. \newline
+		Source: https://en.wikipedia.org/wiki/Discrete\_wavelet\_transform.}
 	\label{fig:DWT}
 \end{figure}
 
@@ -172,23 +180,24 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 \section{2-D Discrete Wavelet Transform}
 \label{sec:2D_DWT}
 
-2-Dimensional Discrete Wavelet Transform works similar way as 1-D with High Pass Filter, Low Pass Filter and downsampling, except that one level of the decomposition includes double filtering, on columns and rows. The figure \ref{fig:2D_DWT} shows an image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
+2-Dimensional Discrete Wavelet Transform works similar way as 1-D with High Pass Filter, Low Pass Filter and downsampling, except that one level of the decomposition includes double filtering, on columns and rows. The figure~\ref{fig:2D_DWT} shows an image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
 
 \begin{itemize}
-\item LL - result of LPF applied on both, columns and rows,
-\item LH - result of LPF applied on columns and HPF on rows,
-\item HL - result of HPF applied on columns and LPF on rows,
-\item HH - result of HPF applied on both, columns and rows.
+\item LL -- result of LPF applied on both, columns and rows,
+\item LH -- result of LPF applied on columns and HPF on rows,
+\item HL -- result of HPF applied on columns and LPF on rows,
+\item HH -- result of HPF applied on both, columns and rows.
 \end{itemize}  
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{2D_DWT.JPG}
-	\caption{2-D Discrete Wavelet transform on an image.}
+	\caption{2-D Discrete Wavelet transform on an image. \newline
+		Source: https://www.hindawi.com/journals/jme/2013/104684/.}
 	\label{fig:2D_DWT}
 \end{figure}
 
-Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part presents similar issues but in a vertical direction. The HH shows sudden changes in a diagonal way. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions.
+Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a~noise). Thus, a~2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a~horizontal direction, whereas the HL part presents similar issues but in a~vertical direction. The HH shows sudden changes in a~diagonal way. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions.
 
 The 2-D DWT can be really useful in compressing and denoising images. It can compress pictures better than the JPEG, often without changes visible by the human eye. This transform is applicable in other image processing, like edge enhancement, edge detection and shape recognition.
 
@@ -207,4 +216,4 @@ y(t) = \sum_{j=1}^{K} \sum_{m=0}^{2^{K-j}-1} d^{(j,m)} 2^{-\frac{j}{2}} \psi\lef
 where $y(t)$ is reconstruction of the input data and $d^{(j,m)}$ coefficients of wavelet transform. The $\psi_0$ is an average value of $y(t)$ over $t \in [0, 2^K-1]$. This parameter can be approximated by zero, without loss of generality.
 \end{defn}
 
-Summarizing, now we are able to transform data to a wavelet domain. Process them simply and efficiently, as well as, we can back to the original domain to read the obtained results.
+Summarizing, now we are able to transform data to a~wavelet domain. Process them simply and efficiently, as well as, we can back to the original domain to read the obtained results.

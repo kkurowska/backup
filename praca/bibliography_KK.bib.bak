@@ -56,4 +56,29 @@
   edition   = {Second},
 }
 
+@Article{MRI,
+  author  = {S. {Lahmiri, M. Boukadoum}},
+  title   = {Classification of Brain MRI using Wavelet Decomposition and SVM},
+  journal = {International Journal of Computer Applications},
+  year    = {2016},
+  volume  = {154},
+  number  = {5},
+  month   = nov,
+}
+
+@Article{EdgeDetectionReview,
+  author  = {Dharampal{, V. Mutneja}},
+  title   = {Methods of Image Edge Detection: A Review},
+  journal = {Journal of Electrical \& Electronic Systems},
+  year    = {2015},
+}
+
+@Electronic{EdgeDetectionAlgorithm,
+  author = {Chesnokov Yuriy},
+  month  = nov,
+  year   = {2007},
+  title  = {Edge Detection in Images with Wavelet Transform},
+  url    = {https://www.codeproject.com/Articles/21293/Edge-Detection-in-Images-with-Wavelet-Transform},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

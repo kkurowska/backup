@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 AUG 2018 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 AUG 2018 22:30
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -745,19 +745,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Overfull \hbox (2.7075pt too wide) in paragraph at lines 42--43
+Overfull \hbox (2.7075pt too wide) in paragraph at lines 23--24
 []\OT1/cmr/m/n/12 Regression. Uses to pre-dict fu-ture val-ues based on his-tor
 -i-cal data. Wavelet
  []
 
-) [5]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5])
+[6]
 \openout2 = `chapter1.aux'.
 
- (chapter1.tex [6
-
-
-
-]
+ (chapter1.tex
 Chapter 1.
 <wavelets_with_bottom_line.png, id=62, 999.735pt x 558.085pt>
 File: wavelets_with_bottom_line.png Graphic file (type png)
@@ -765,55 +765,48 @@ File: wavelets_with_bottom_line.png Graphic file (type png)
 <use wavelets_with_bottom_line.png>
 Package pdftex.def Info: wavelets_with_bottom_line.png used on input line 30.
 (pdftex.def)             Requested size: 390.0pt x 217.71188pt.
+ [7
 
-Overfull \hbox (2.54pt too wide) in paragraph at lines 38--39
-[]\OT1/cmr/m/n/12 Vanishing mo-ments. Wavelet has $\OML/cmm/m/it/12 n$ \OT1/cmr
-/m/n/12 van-ish-ing mo-ments, when $[] \OML/cmm/m/it/12 t[] \OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dt \OT1/cmr/m/n/12 =
- []
 
-[7 <./wavelets_with_bottom_line.png>]
-Overfull \hbox (0.1265pt too wide) in paragraph at lines 54--55
-[]\OT1/cmr/m/n/12 The Haar wavelet is the sim-plest of Daubechies ($\OML/cmm/m/
-it/12 db\OT1/cmr/m/n/12 1$), and also of all, wavelets.
- []
 
+ <./wavelets_with_bottom_line.png>]
 <Haar_wavelet.png, id=76, 803.0pt x 602.25pt>
 File: Haar_wavelet.png Graphic file (type png)
  <use Haar_wavelet.png>
-Package pdftex.def Info: Haar_wavelet.png used on input line 67.
+Package pdftex.def Info: Haar_wavelet.png used on input line 74.
 (pdftex.def)             Requested size: 195.0pt x 146.25221pt.
- [8 <./Haar_wavelet.png>] <DB_N.png, id=82, 1631.09375pt x 725.71124pt>
-File: DB_N.png Graphic file (type png)
- <use DB_N.png>
-Package pdftex.def Info: DB_N.png used on input line 77.
-(pdftex.def)             Requested size: 390.0pt x 173.52092pt.
-
-Underfull \hbox (badness 5490) in paragraph at lines 119--120
-[]|\OT1/cmr/m/n/12 Suitable for sta-tion-ary and non-
- []
-
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 115--133
- [][] 
- []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./DB_N.png>] <DWT.png, id=87, 568.1225pt x 173.64874pt>
+<DB_N.png, id=77, 1631.09375pt x 725.71124pt>
+File: DB_N.png Graphic file (type png)
+ <use DB_N.png>
+Package pdftex.def Info: DB_N.png used on input line 85.
+(pdftex.def)             Requested size: 390.0pt x 173.52092pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+Underfull \hbox (badness 6792) in paragraph at lines 137--138
+[]|\OT1/cmr/m/n/12 Scaled and trans-lated mother
+ []
+
+[9 <./Haar_wavelet.png> <./DB_N.png>]
+<DWT.png, id=86, 568.1225pt x 173.64874pt>
 File: DWT.png Graphic file (type png)
  <use DWT.png>
-Package pdftex.def Info: DWT.png used on input line 166.
+Package pdftex.def Info: DWT.png used on input line 173.
 (pdftex.def)             Requested size: 390.0pt x 119.20833pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] <2D_DWT.JPG, id=92, 144.54pt x 58.2978pt>
+[10] <2D_DWT.JPG, id=91, 144.54pt x 58.2978pt>
 File: 2D_DWT.JPG Graphic file (type jpg)
  <use 2D_DWT.JPG>
-Package pdftex.def Info: 2D_DWT.JPG used on input line 186.
+Package pdftex.def Info: 2D_DWT.JPG used on input line 194.
 (pdftex.def)             Requested size: 390.0pt x 157.30829pt.
  [11 <./DWT.png (PNG copy)> <./2D_DWT.JPG>]) [12]
 \openout2 = `chapter2.aux'.
@@ -825,410 +818,380 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<graphs/square.png, id=100, 256.96pt x 256.96pt>
+<graphs/square.png, id=99, 256.96pt x 256.96pt>
 File: graphs/square.png Graphic file (type png)
  <use graphs/square.png>
 Package pdftex.def Info: graphs/square.png used on input line 29.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
+[13
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/square_db2_coeffs.png, id=101, 987.2082pt x 484.9317pt>
+
+ <./graphs/square.png (PNG copy)>]
+<graphs/square_db2_coeffs.png, id=105, 987.2082pt x 484.9317pt>
 File: graphs/square_db2_coeffs.png Graphic file (type png)
 
 <use graphs/square_db2_coeffs.png>
 Package pdftex.def Info: graphs/square_db2_coeffs.png used on input line 37.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_db2_coeffs_d.png, id=102, 987.2082pt x 484.9317pt>
+<graphs/square_db2_coeffs_d.png, id=106, 987.2082pt x 484.9317pt>
 File: graphs/square_db2_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_db2_coeffs_d.png>
 Package pdftex.def Info: graphs/square_db2_coeffs_d.png used on input line 46.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
-
-Underfull \vbox (badness 1681) has occurred while \output is active []
-
- [13
-
-
-
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_db2.png, id=108, 256.96pt x 256.96pt>
+ [14 <./graphs/square_db2_coeffs.png> <./graphs/square_db2_coeffs_d.png>]
+<graphs/square_db2.png, id=112, 256.96pt x 256.96pt>
 File: graphs/square_db2.png Graphic file (type png)
 
 <use graphs/square_db2.png>
 Package pdftex.def Info: graphs/square_db2.png used on input line 57.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_db2_pp.png, id=109, 256.96pt x 256.96pt>
+<graphs/square_db2_pp.png, id=113, 256.96pt x 256.96pt>
 File: graphs/square_db2_pp.png Graphic file (type png)
 
 <use graphs/square_db2_pp.png>
-Package pdftex.def Info: graphs/square_db2_pp.png used on input line 70.
+Package pdftex.def Info: graphs/square_db2_pp.png used on input line 68.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
 
+Overfull \hbox (2.18481pt too wide) in paragraph at lines 76--77
+[]\OT1/cmr/m/n/12 The wavelets prop-erty of van-ish-ing mo-ments guar-an-tee th
+at big-ger wavelet
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./graphs/square.png (PNG copy)> <./graphs/square_db2_coeffs.png>]
-<graphs/square_s10.png, id=114, 256.96pt x 256.96pt>
+[15 <./graphs/square_db2.png (PNG copy)> <./graphs/square_db2_pp.png (PNG copy)
+>] <graphs/square_s10.png, id=117, 256.96pt x 256.96pt>
 File: graphs/square_s10.png Graphic file (type png)
 
 <use graphs/square_s10.png>
-Package pdftex.def Info: graphs/square_s10.png used on input line 106.
+Package pdftex.def Info: graphs/square_s10.png used on input line 104.
 (pdftex.def)             Requested size: 117.00119pt x 117.00323pt.
- [15 <./graphs/square_db2_coeffs_d.png> <./graphs/square_db2.png (PNG copy)>]
-<graphs/square_s10_db1_coeffs.png, id=119, 987.2082pt x 484.9317pt>
+
+<graphs/square_s10_db1_coeffs.png, id=118, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_coeffs.png Graphic file (type png)
 
 <use graphs/square_s10_db1_coeffs.png>
 Package pdftex.def Info: graphs/square_s10_db1_coeffs.png used on input line 11
-5.
+3.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_s10_db1_hard_coeffs_d.png, id=120, 987.2082pt x 484.9317pt>
+<graphs/square_s10_db1_hard_coeffs_d.png, id=119, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_hard_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_s10_db1_hard_coeffs_d.png>
 Package pdftex.def Info: graphs/square_s10_db1_hard_coeffs_d.png used on input 
-line 124.
+line 122.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
+ [16 <./graphs/square_s10.png (PNG copy)> <./graphs/square_s10_db1_coeffs.png>]
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_s10_db1_soft_coeffs_d.png, id=121, 987.2082pt x 484.9317pt>
+<graphs/square_s10_db1_soft_coeffs_d.png, id=124, 987.2082pt x 484.9317pt>
 File: graphs/square_s10_db1_soft_coeffs_d.png Graphic file (type png)
 
 <use graphs/square_s10_db1_soft_coeffs_d.png>
 Package pdftex.def Info: graphs/square_s10_db1_soft_coeffs_d.png used on input 
-line 131.
+line 129.
 (pdftex.def)             Requested size: 390.0pt x 191.57181pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/square_s10_db1_hard_pp.png, id=122, 256.96pt x 256.96pt>
+<graphs/square_s10_db1_hard_pp.png, id=125, 256.96pt x 256.96pt>
 File: graphs/square_s10_db1_hard_pp.png Graphic file (type png)
 
 <use graphs/square_s10_db1_hard_pp.png>
 Package pdftex.def Info: graphs/square_s10_db1_hard_pp.png used on input line 1
-39.
+37.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 
-<graphs/square_s10_db1_soft_pp.png, id=123, 256.96pt x 256.96pt>
+<graphs/square_s10_db1_soft_pp.png, id=126, 256.96pt x 256.96pt>
 File: graphs/square_s10_db1_soft_pp.png Graphic file (type png)
 
 <use graphs/square_s10_db1_soft_pp.png>
 Package pdftex.def Info: graphs/square_s10_db1_soft_pp.png used on input line 1
-39.
+37.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/diamond_s16.png, id=124, 363.3575pt x 363.3575pt>
+[17 <./graphs/square_s10_db1_hard_coeffs_d.png> <./graphs/square_s10_db1_soft_c
+oeffs_d.png>] <graphs/diamond_s16.png, id=132, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16.png Graphic file (type png)
 
 <use graphs/diamond_s16.png>
-Package pdftex.def Info: graphs/diamond_s16.png used on input line 156.
+Package pdftex.def Info: graphs/diamond_s16.png used on input line 154.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s10.png, id=125, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10.png, id=133, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10.png Graphic file (type png)
 
 <use graphs/diamond_s10.png>
-Package pdftex.def Info: graphs/diamond_s10.png used on input line 156.
+Package pdftex.def Info: graphs/diamond_s10.png used on input line 154.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s4.png, id=126, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4.png, id=134, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4.png Graphic file (type png)
 
 <use graphs/diamond_s4.png>
-Package pdftex.def Info: graphs/diamond_s4.png used on input line 156.
+Package pdftex.def Info: graphs/diamond_s4.png used on input line 154.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
- [16 <./graphs/square_db2_pp.png (PNG copy)> <./graphs/square_s10.png (PNG copy
-)>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/diamond_s16_db1_95_pp.png, id=130, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_95_pp.png, id=135, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_95_pp.png>
 Package pdftex.def Info: graphs/diamond_s16_db1_95_pp.png used on input line 16
-6.
+4.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s10_db1_95_pp.png, id=131, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_95_pp.png, id=136, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_95_pp.png>
 Package pdftex.def Info: graphs/diamond_s10_db1_95_pp.png used on input line 16
-6.
+4.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s4_db1_95_pp.png, id=132, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_95_pp.png, id=137, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_95_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_95_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_95_pp.png used on input line 166
+Package pdftex.def Info: graphs/diamond_s4_db1_95_pp.png used on input line 164
 .
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/diamond_s16_db1_99_pp.png, id=133, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_99_pp.png, id=138, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_99_pp.png>
 Package pdftex.def Info: graphs/diamond_s16_db1_99_pp.png used on input line 17
-4.
+2.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s10_db1_99_pp.png, id=134, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_99_pp.png, id=139, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_99_pp.png>
 Package pdftex.def Info: graphs/diamond_s10_db1_99_pp.png used on input line 17
-4.
+2.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s4_db1_99_pp.png, id=135, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_99_pp.png, id=140, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_99_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_99_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_99_pp.png used on input line 174
+Package pdftex.def Info: graphs/diamond_s4_db1_99_pp.png used on input line 172
 .
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/diamond_s16_db1_98_pp.png, id=136, 363.3575pt x 363.3575pt>
+<graphs/diamond_s16_db1_98_pp.png, id=141, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s16_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s16_db1_98_pp.png>
 Package pdftex.def Info: graphs/diamond_s16_db1_98_pp.png used on input line 18
-4.
+2.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s10_db1_98_pp.png, id=137, 363.3575pt x 363.3575pt>
+<graphs/diamond_s10_db1_98_pp.png, id=142, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s10_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s10_db1_98_pp.png>
 Package pdftex.def Info: graphs/diamond_s10_db1_98_pp.png used on input line 18
-4.
+2.
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
-<graphs/diamond_s4_db1_98_pp.png, id=138, 363.3575pt x 363.3575pt>
+<graphs/diamond_s4_db1_98_pp.png, id=143, 363.3575pt x 363.3575pt>
 File: graphs/diamond_s4_db1_98_pp.png Graphic file (type png)
 
 <use graphs/diamond_s4_db1_98_pp.png>
-Package pdftex.def Info: graphs/diamond_s4_db1_98_pp.png used on input line 184
+Package pdftex.def Info: graphs/diamond_s4_db1_98_pp.png used on input line 182
 .
 (pdftex.def)             Requested size: 93.6013pt x 93.60025pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./graphs/square_s10_db1_coeffs.png> <./graphs/square_s10_db1_hard_coeffs_d
-.png>] <graphs/camera.png, id=144, 513.92pt x 513.92pt>
+[18 <./graphs/square_s10_db1_hard_pp.png (PNG copy)> <./graphs/square_s10_db1_s
+oft_pp.png (PNG copy)> <./graphs/diamond_s16.png (PNG copy)> <./graphs/diamond_
+s10.png (PNG copy)> <./graphs/diamond_s4.png (PNG copy)>]
+<graphs/camera.png, id=148, 513.92pt x 513.92pt>
 File: graphs/camera.png Graphic file (type png)
-
-<use graphs/camera.png>
-Package pdftex.def Info: graphs/camera.png used on input line 203.
+ <use graphs/camera.png>
+Package pdftex.def Info: graphs/camera.png used on input line 202.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
 
-<graphs/camera_haar_pp.png, id=145, 513.92pt x 513.92pt>
+<graphs/camera_haar_pp.png, id=149, 513.92pt x 513.92pt>
 File: graphs/camera_haar_pp.png Graphic file (type png)
 
 <use graphs/camera_haar_pp.png>
-Package pdftex.def Info: graphs/camera_haar_pp.png used on input line 203.
+Package pdftex.def Info: graphs/camera_haar_pp.png used on input line 202.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/camera_db2_pp.png, id=146, 513.92pt x 513.92pt>
+<graphs/camera_db2_pp.png, id=150, 513.92pt x 513.92pt>
 File: graphs/camera_db2_pp.png Graphic file (type png)
 
 <use graphs/camera_db2_pp.png>
-Package pdftex.def Info: graphs/camera_db2_pp.png used on input line 214.
+Package pdftex.def Info: graphs/camera_db2_pp.png used on input line 213.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
 
-<graphs/camera_db4_pp.png, id=147, 513.92pt x 513.92pt>
+<graphs/camera_db4_pp.png, id=151, 513.92pt x 513.92pt>
 File: graphs/camera_db4_pp.png Graphic file (type png)
 
 <use graphs/camera_db4_pp.png>
-Package pdftex.def Info: graphs/camera_db4_pp.png used on input line 214.
+Package pdftex.def Info: graphs/camera_db4_pp.png used on input line 213.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
 
-<graphs/camera_db6_pp.png, id=148, 513.92pt x 513.92pt>
+<graphs/camera_db6_pp.png, id=152, 513.92pt x 513.92pt>
 File: graphs/camera_db6_pp.png Graphic file (type png)
 
 <use graphs/camera_db6_pp.png>
-Package pdftex.def Info: graphs/camera_db6_pp.png used on input line 217.
+Package pdftex.def Info: graphs/camera_db6_pp.png used on input line 216.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
 
-<graphs/camera_db8_pp.png, id=149, 513.92pt x 513.92pt>
+<graphs/camera_db8_pp.png, id=153, 513.92pt x 513.92pt>
 File: graphs/camera_db8_pp.png Graphic file (type png)
 
 <use graphs/camera_db8_pp.png>
-Package pdftex.def Info: graphs/camera_db8_pp.png used on input line 217.
+Package pdftex.def Info: graphs/camera_db8_pp.png used on input line 216.
 (pdftex.def)             Requested size: 157.94785pt x 157.94908pt.
- [18 <./graphs/square_s10_db1_soft_coeffs_d.png> <./graphs/square_s10_db1_hard_
-pp.png (PNG copy)> <./graphs/square_s10_db1_soft_pp.png (PNG copy)>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[19 <./graphs/diamond_s16_db1_95_pp.png (PNG copy)> <./graphs/diamond_s10_db1_9
+5_pp.png (PNG copy)> <./graphs/diamond_s4_db1_95_pp.png (PNG copy)> <./graphs/d
+iamond_s16_db1_99_pp.png (PNG copy)> <./graphs/diamond_s10_db1_99_pp.png (PNG c
+opy)> <./graphs/diamond_s4_db1_99_pp.png (PNG copy)>]
 File: graphs/square.png Graphic file (type png)
-<use graphs/square.png>
-Package pdftex.def Info: graphs/square.png used on input line 228.
+ <use graphs/square.png>
+Package pdftex.def Info: graphs/square.png used on input line 227.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 
-<graphs/square_haar_pp.png, id=154, 256.96pt x 256.96pt>
+<graphs/square_haar_pp.png, id=158, 256.96pt x 256.96pt>
 File: graphs/square_haar_pp.png Graphic file (type png)
 
 <use graphs/square_haar_pp.png>
-Package pdftex.def Info: graphs/square_haar_pp.png used on input line 228.
+Package pdftex.def Info: graphs/square_haar_pp.png used on input line 227.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 File: graphs/square_db2_pp.png Graphic file (type png)
  <use graphs/square_db2_pp.png>
-Package pdftex.def Info: graphs/square_db2_pp.png used on input line 231.
+Package pdftex.def Info: graphs/square_db2_pp.png used on input line 230.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 
-<graphs/square_db4_pp.png, id=155, 256.96pt x 256.96pt>
+<graphs/square_db4_pp.png, id=159, 256.96pt x 256.96pt>
 File: graphs/square_db4_pp.png Graphic file (type png)
 
 <use graphs/square_db4_pp.png>
-Package pdftex.def Info: graphs/square_db4_pp.png used on input line 231.
+Package pdftex.def Info: graphs/square_db4_pp.png used on input line 230.
 (pdftex.def)             Requested size: 87.7494pt x 87.74948pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/rotated_square.png, id=156, 315.1775pt x 315.1775pt>
+<graphs/rotated_square.png, id=160, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square.png Graphic file (type png)
 
 <use graphs/rotated_square.png>
-Package pdftex.def Info: graphs/rotated_square.png used on input line 242.
+Package pdftex.def Info: graphs/rotated_square.png used on input line 241.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
-<graphs/rotated_square_haar_pp.png, id=157, 315.1775pt x 315.1775pt>
+<graphs/rotated_square_haar_pp.png, id=161, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square_haar_pp.png Graphic file (type png)
 
 <use graphs/rotated_square_haar_pp.png>
 Package pdftex.def Info: graphs/rotated_square_haar_pp.png used on input line 2
-42.
+41.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
-<graphs/rotated_square_db2_pp.png, id=158, 315.1775pt x 315.1775pt>
+<graphs/rotated_square_db2_pp.png, id=162, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square_db2_pp.png Graphic file (type png)
 
 <use graphs/rotated_square_db2_pp.png>
 Package pdftex.def Info: graphs/rotated_square_db2_pp.png used on input line 24
-5.
+4.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
-<graphs/rotated_square_db4_pp.png, id=159, 315.1775pt x 315.1775pt>
+<graphs/rotated_square_db4_pp.png, id=163, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square_db4_pp.png Graphic file (type png)
 
 <use graphs/rotated_square_db4_pp.png>
 Package pdftex.def Info: graphs/rotated_square_db4_pp.png used on input line 24
-5.
+4.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
-<graphs/rotated_square_db6_pp.png, id=160, 315.1775pt x 315.1775pt>
+<graphs/rotated_square_db6_pp.png, id=164, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square_db6_pp.png Graphic file (type png)
 
 <use graphs/rotated_square_db6_pp.png>
 Package pdftex.def Info: graphs/rotated_square_db6_pp.png used on input line 24
-8.
+7.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
-<graphs/rotated_square_db8_pp.png, id=161, 315.1775pt x 315.1775pt>
+<graphs/rotated_square_db8_pp.png, id=165, 315.1775pt x 315.1775pt>
 File: graphs/rotated_square_db8_pp.png Graphic file (type png)
 
 <use graphs/rotated_square_db8_pp.png>
 Package pdftex.def Info: graphs/rotated_square_db8_pp.png used on input line 24
-8.
+7.
 (pdftex.def)             Requested size: 87.7494pt x 87.74893pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/frog.png, id=162, 1129.21875pt x 637.38126pt>
+<graphs/frog.png, id=166, 1129.21875pt x 637.38126pt>
 File: graphs/frog.png Graphic file (type png)
  <use graphs/frog.png>
-Package pdftex.def Info: graphs/frog.png used on input line 259.
+Package pdftex.def Info: graphs/frog.png used on input line 258.
 (pdftex.def)             Requested size: 253.49762pt x 143.08365pt.
 
-<graphs/frog_haar_pp.png, id=163, 1130.2225pt x 638.385pt>
+<graphs/frog_haar_pp.png, id=167, 1130.2225pt x 638.385pt>
 File: graphs/frog_haar_pp.png Graphic file (type png)
 
 <use graphs/frog_haar_pp.png>
-Package pdftex.def Info: graphs/frog_haar_pp.png used on input line 262.
+Package pdftex.def Info: graphs/frog_haar_pp.png used on input line 261.
 (pdftex.def)             Requested size: 253.49762pt x 143.18233pt.
 
-<graphs/frog_db2_pp.png, id=164, 1130.2225pt x 638.385pt>
+<graphs/frog_db2_pp.png, id=168, 1130.2225pt x 638.385pt>
 File: graphs/frog_db2_pp.png Graphic file (type png)
 
 <use graphs/frog_db2_pp.png>
-Package pdftex.def Info: graphs/frog_db2_pp.png used on input line 265.
+Package pdftex.def Info: graphs/frog_db2_pp.png used on input line 264.
 (pdftex.def)             Requested size: 253.49762pt x 143.18233pt.
 
-<graphs/frog_db6_pp.png, id=165, 1130.2225pt x 638.385pt>
+<graphs/frog_db6_pp.png, id=169, 1130.2225pt x 638.385pt>
 File: graphs/frog_db6_pp.png Graphic file (type png)
 
 <use graphs/frog_db6_pp.png>
-Package pdftex.def Info: graphs/frog_db6_pp.png used on input line 268.
+Package pdftex.def Info: graphs/frog_db6_pp.png used on input line 267.
 (pdftex.def)             Requested size: 253.49762pt x 143.18233pt.
 
 
-LaTeX Warning: Float too large for page by 22.53058pt on input line 273.
+LaTeX Warning: Float too large for page by 22.53058pt on input line 272.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
-Underfull \vbox (badness 7796) has occurred while \output is active []
-
- [19 <./graphs/diamond_s16.png (PNG copy)> <./graphs/diamond_s10.png (PNG copy)
-> <./graphs/diamond_s4.png (PNG copy)> <./graphs/diamond_s16_db1_95_pp.png (PNG
- copy)> <./graphs/diamond_s10_db1_95_pp.png (PNG copy)> <./graphs/diamond_s4_db
-1_95_pp.png (PNG copy)>] [20 <./graphs/diamond_s16_db1_99_pp.png (PNG copy)> <.
-/graphs/diamond_s10_db1_99_pp.png (PNG copy)> <./graphs/diamond_s4_db1_99_pp.pn
-g (PNG copy)> <./graphs/diamond_s16_db1_98_pp.png (PNG copy)> <./graphs/diamond
-_s10_db1_98_pp.png (PNG copy)> <./graphs/diamond_s4_db1_98_pp.png (PNG copy)>] 
-[21 <./graphs/camera.png (PNG copy)> <./graphs/camera_haar_pp.png (PNG copy)> <
-./graphs/camera_db2_pp.png (PNG copy)> <./graphs/camera_db4_pp.png (PNG copy)> 
-<./graphs/camera_db6_pp.png (PNG copy)> <./graphs/camera_db8_pp.png (PNG copy)>
-] [22 <./graphs/square_haar_pp.png (PNG copy)> <./graphs/square_db4_pp.png (PNG
- copy)> <./graphs/rotated_square.png (PNG copy)> <./graphs/rotated_square_haar_
-pp.png (PNG copy)> <./graphs/rotated_square_db2_pp.png (PNG copy)> <./graphs/ro
-tated_square_db4_pp.png (PNG copy)> <./graphs/rotated_square_db6_pp.png (PNG co
-py)> <./graphs/rotated_square_db8_pp.png (PNG copy)>] [23 <./graphs/frog.png (P
-NG copy)> <./graphs/frog_haar_pp.png (PNG copy)> <./graphs/frog_db2_pp.png (PNG
- copy)> <./graphs/frog_db6_pp.png (PNG copy)>]
+) [20 <./graphs/diamond_s16_db1_98_pp.png (PNG copy)> <./graphs/diamond_s10_db1
+_98_pp.png (PNG copy)> <./graphs/diamond_s4_db1_98_pp.png (PNG copy)> <./graphs
+/camera.png (PNG copy)> <./graphs/camera_haar_pp.png (PNG copy)>] [21 <./graphs
+/camera_db2_pp.png (PNG copy)> <./graphs/camera_db4_pp.png (PNG copy)> <./graph
+s/camera_db6_pp.png (PNG copy)> <./graphs/camera_db8_pp.png (PNG copy)>]
+[22 <./graphs/square_haar_pp.png (PNG copy)> <./graphs/square_db4_pp.png (PNG c
+opy)> <./graphs/rotated_square.png (PNG copy)> <./graphs/rotated_square_haar_pp
+.png (PNG copy)> <./graphs/rotated_square_db2_pp.png (PNG copy)> <./graphs/rota
+ted_square_db4_pp.png (PNG copy)> <./graphs/rotated_square_db6_pp.png (PNG copy
+)> <./graphs/rotated_square_db8_pp.png (PNG copy)>] [23 <./graphs/frog.png (PNG
+ copy)> <./graphs/frog_haar_pp.png (PNG copy)> <./graphs/frog_db2_pp.png (PNG c
+opy)> <./graphs/frog_db6_pp.png (PNG copy)>]
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex [24
@@ -1237,85 +1200,85 @@ NG copy)> <./graphs/frog_haar_pp.png (PNG copy)> <./graphs/frog_db2_pp.png (PNG
 
 ]
 Chapter 3.
-<graphs/brain2.png, id=186, 196.735pt x 216.81pt>
+<graphs/brain2.png, id=185, 196.735pt x 216.81pt>
 File: graphs/brain2.png Graphic file (type png)
  <use graphs/brain2.png>
-Package pdftex.def Info: graphs/brain2.png used on input line 12.
+Package pdftex.def Info: graphs/brain2.png used on input line 13.
 (pdftex.def)             Requested size: 157.94785pt x 174.06355pt.
 
-<graphs/brain2_haar_100_0.png, id=187, 196.735pt x 216.81pt>
+<graphs/brain2_haar_100_0.png, id=186, 196.735pt x 216.81pt>
 File: graphs/brain2_haar_100_0.png Graphic file (type png)
 
 <use graphs/brain2_haar_100_0.png>
-Package pdftex.def Info: graphs/brain2_haar_100_0.png used on input line 12.
+Package pdftex.def Info: graphs/brain2_haar_100_0.png used on input line 13.
 (pdftex.def)             Requested size: 157.94785pt x 174.06355pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/brain_MRI_tumour.png, id=188, 803.0pt x 451.6875pt>
+<graphs/brain_MRI_tumour.png, id=187, 803.0pt x 451.6875pt>
 File: graphs/brain_MRI_tumour.png Graphic file (type png)
 
 <use graphs/brain_MRI_tumour.png>
-Package pdftex.def Info: graphs/brain_MRI_tumour.png used on input line 22.
+Package pdftex.def Info: graphs/brain_MRI_tumour.png used on input line 23.
 (pdftex.def)             Requested size: 253.49762pt x 142.59245pt.
 
-<graphs/brain_MRI_tumour_haar_100_0.png, id=189, 803.0pt x 451.6875pt>
+<graphs/brain_MRI_tumour_haar_100_0.png, id=188, 803.0pt x 451.6875pt>
 File: graphs/brain_MRI_tumour_haar_100_0.png Graphic file (type png)
 
 <use graphs/brain_MRI_tumour_haar_100_0.png>
 Package pdftex.def Info: graphs/brain_MRI_tumour_haar_100_0.png used on input l
-ine 25.
+ine 26.
 (pdftex.def)             Requested size: 253.49762pt x 142.59245pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/lungs1.png, id=190, 501.875pt x 406.51875pt>
+<graphs/lungs1.png, id=189, 501.875pt x 406.51875pt>
 File: graphs/lungs1.png Graphic file (type png)
  <use graphs/lungs1.png>
-Package pdftex.def Info: graphs/lungs1.png used on input line 35.
+Package pdftex.def Info: graphs/lungs1.png used on input line 36.
 (pdftex.def)             Requested size: 157.94785pt x 127.93622pt.
 
-<graphs/lungs1_haar_100_0.png, id=191, 501.875pt x 407.5225pt>
+<graphs/lungs1_haar_100_0.png, id=190, 501.875pt x 407.5225pt>
 File: graphs/lungs1_haar_100_0.png Graphic file (type png)
 
 <use graphs/lungs1_haar_100_0.png>
-Package pdftex.def Info: graphs/lungs1_haar_100_0.png used on input line 35.
+Package pdftex.def Info: graphs/lungs1_haar_100_0.png used on input line 36.
 (pdftex.def)             Requested size: 157.94785pt x 128.2521pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/broken_bone.png, id=192, 622.325pt x 351.3125pt>
+<graphs/broken_bone.png, id=191, 622.325pt x 351.3125pt>
 File: graphs/broken_bone.png Graphic file (type png)
 
 <use graphs/broken_bone.png>
-Package pdftex.def Info: graphs/broken_bone.png used on input line 45.
+Package pdftex.def Info: graphs/broken_bone.png used on input line 46.
 (pdftex.def)             Requested size: 157.94785pt x 89.16269pt.
 
-<graphs/broken_bone_haar_100_0.png, id=193, 622.325pt x 351.3125pt>
+<graphs/broken_bone_haar_100_0.png, id=192, 622.325pt x 351.3125pt>
 File: graphs/broken_bone_haar_100_0.png Graphic file (type png)
 
 <use graphs/broken_bone_haar_100_0.png>
 Package pdftex.def Info: graphs/broken_bone_haar_100_0.png used on input line 4
-5.
+6.
 (pdftex.def)             Requested size: 157.94785pt x 89.16269pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/leg1.png, id=194, 199.74625pt x 301.125pt>
+<graphs/leg1.png, id=193, 199.74625pt x 301.125pt>
 File: graphs/leg1.png Graphic file (type png)
  <use graphs/leg1.png>
-Package pdftex.def Info: graphs/leg1.png used on input line 54.
+Package pdftex.def Info: graphs/leg1.png used on input line 55.
 (pdftex.def)             Requested size: 157.94785pt x 238.12506pt.
 
-<graphs/leg1_haar_100_0.png, id=195, 200.75pt x 301.125pt>
+<graphs/leg1_haar_100_0.png, id=194, 200.75pt x 301.125pt>
 File: graphs/leg1_haar_100_0.png Graphic file (type png)
 
 <use graphs/leg1_haar_100_0.png>
-Package pdftex.def Info: graphs/leg1_haar_100_0.png used on input line 54.
+Package pdftex.def Info: graphs/leg1_haar_100_0.png used on input line 55.
 (pdftex.def)             Requested size: 157.94785pt x 236.9396pt.
 
 
@@ -1333,38 +1296,35 @@ leg1_haar_100_0.png (PNG copy)>]
 
 
 
-]
-Chapter 4.
-) [29] [30
+]) [29] [30
 
 
-] (document_KK.lof)
+] (document_KK.lof
+Overfull \hbox (6.01338pt too wide) in paragraph at lines 5--5
+ \OT1/cmr/m/n/10.95 Source: http://radio.feld.cvut.cz/matlab/toolbox/wavelet/ch
+01[]31a.html. [][]  
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `document_KK.lof'.
 
  (document_KK.bbl [31] [32
 
-])
-
-LaTeX Warning: Citation `DataManing' undefined on input line 149.
-
-[33] (document_KK.aux (introduction.aux) (chapter1.aux) (chapter2.aux)
-(chapter3.aux) (summary.aux))
-
-LaTeX Warning: There were undefined references.
-
+]) [33] (document_KK.aux (introduction.aux)
+(chapter1.aux) (chapter2.aux) (chapter3.aux) (summary.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5994 strings out of 493334
- 89423 string characters out of 3139251
- 169501 words of memory out of 3000000
- 9313 multiletter control sequences out of 15000+200000
- 12545 words of font info for 47 fonts, out of 3000000 for 9000
+ 5998 strings out of 493334
+ 89508 string characters out of 3139251
+ 164565 words of memory out of 3000000
+ 9318 multiletter control sequences out of 15000+200000
+ 12198 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,47p,818b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,47p,1001b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1379,16 +1339,15 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
-alatino/uplri8a.pfb>
-Output written on document_KK.pdf (33 pages, 2793200 bytes).
+msfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/palatino/uplri8a.pfb>
+Output written on document_KK.pdf (33 pages, 2783992 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
+ 282 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

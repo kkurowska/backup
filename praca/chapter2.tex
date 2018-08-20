@@ -1,20 +1,20 @@
 \chapter{Edge detection} 
 \label{ch:edge_detection}
 
-In this chapter let us focus on the main goal of the thesis - edge detection. This problem is a special case of the data dimensionality reduction, which is a significant part of the pre-processing in data mining.
+In this chapter let us focus on the main goal of the thesis - edge detection. This problem is a~special case of the data dimensionality reduction, which is a~significant part of the pre-processing in data mining.
 
-%An edge is a place where image brightness changes rapidly.
+%An edge is a~place where image brightness changes rapidly.
 
-There are various methods to identify such discontinuities. The most popular are gradient based (e.g. Canny, Prewitt, Sobel) and Laplacian based. However, there is also another method, which provides similar results and can be more efficient in terms of computation. This method is based on the 2-Dimensional Discrete Wavelet Transform described in section \ref{sec:2D_DWT}. \newline
+There are various methods to identify such discontinuities. The most popular are gradient based (e.g. Canny, Prewitt, Sobel) and Laplacian based \cite{EdgeDetectionReview}. However, there is also another method, which provides similar results and can be more efficient in terms of computation. This method is based on the 2-Dimensional Discrete Wavelet Transform described in section~\ref{sec:2D_DWT}. \newline
 
-The mentioned method contains the following steps. \textit{** Link to article Edge detection **}
+The mentioned method contains the following steps \cite{EdgeDetectionAlgorithm}.
 \begin{enumerate}
 \item Convert image to grey scale.
 \item Apply 2-D DWT on an image.
 \item Remove the LL part.
 \item Denoise the LH, HL and HH coefficients.
 \item Reconstruct the initial image.
-\item Post-processing - modify contrast to emphasize obtained edges.
+\item Post-processing -- modify contrast to emphasize obtained edges.
 \end{enumerate}
 
 \section{Implementation of an algorithm}
@@ -22,15 +22,15 @@ The mentioned method contains the following steps. \textit{** Link to article Ed
 
 The algorithm is implemented in \texttt{Python} using \texttt{PyWavelets} package. There are used also auxiliary packages like: \texttt{numpy}, \texttt{matplotlib}, \texttt{PIL} and \texttt{scipy}. The \texttt{PyWavelets} package contains all features required to edge detection algorithm, i.e. 2D Forward and Inverse Discrete Wavelet Transform, build-in many wavelet functions and thresholding functionality (used to denoise coefficients).
 
-Lets go deeper into algorithm, using a simple example - white square on a black background.
+Lets go deeper into algorithm, using a~simple example -- white square on a~black background.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.3\textwidth]{graphs/square.png}
-	\caption{An initial image - a white square.}
+	\caption{An initial image -- a~white square.}
 \end{figure}
 
-Initially, a colour image must be simplified by conversion to grey scale. Edges are recognised as changes in brightness, so a single pixel should contains only information about a colour (black) intensity. Our initial image is already black and white so we do not need to convert it. Now, we can apply the 2D DWT function. As a result, according to the description in section \ref{sec:2D_DWT}, we obtain four components of wavelet coefficients: LL, LH, HL and HH shown on a graph \ref{fig:square_coeffs}. It is clearly visible that the LL part reflects the initial image and the rest components contains information about rapid brightness changes in particular directions. 
+Initially, a~colour image must be simplified by conversion to grey scale. Edges are recognised as changes in brightness, so a~single pixel should contains only information about a~colour (black) intensity. Our initial image is already black and white so we do not need to convert it. Now, we can apply the 2D DWT function. As a~result, according to the description in section~\ref{sec:2D_DWT}, we obtain four components of wavelet coefficients: LL, LH, HL and HH shown on a~graph~\ref{fig:square_coeffs}. It is clearly visible that the LL part reflects the initial image and the rest components contains information about rapid brightness changes in particular directions. 
 
 \begin{figure}[h]
 	\centering
@@ -39,7 +39,7 @@ Initially, a colour image must be simplified by conversion to grey scale. Edges 
 	\label{fig:square_coeffs}
 \end{figure}
 
-Thus, we are interested only in components which gives information about edges, so we remove the approximation part - figure \ref{fig:square_coeffs_d}.
+Thus, we are interested only in components which gives information about edges, so we remove the approximation part -- figure~\ref{fig:square_coeffs_d}.
 
 \begin{figure}[h]
 	\centering
@@ -48,9 +48,9 @@ Thus, we are interested only in components which gives information about edges, 
 	\label{fig:square_coeffs_d}
 \end{figure}
 
-Subsequently, remaining components can be denoised. It means, we can get rid off small, insignificant coefficients by thresholding. More about setting the threshold is described in section \ref{sec:threshold}. This simple example do not require any denoising, so lets go further.
+Subsequently, remaining components can be denoised. It means, we can get rid off small, insignificant coefficients by thresholding. More about setting the threshold is described in section~\ref{sec:threshold}. This simple example do not require any denoising, so lets go further.
 
-The last main step is reconstruction of the initial image, i.e. application an inverse DWT on the denoised coefficients. In the result, we obtain edges of the initial image presented on a graph \ref{fig:square_idwt}.
+The last main step is reconstruction of the initial image, i.e. application an inverse DWT on the denoised coefficients. In the result, we obtain edges of the initial image presented on a~graph~\ref{fig:square_idwt}.
 
 \begin{figure}[h]
 	\centering
@@ -59,11 +59,9 @@ The last main step is reconstruction of the initial image, i.e. application an i
 	\label{fig:square_idwt}
 \end{figure}
 
-At the end, we can manipulate contrast to emphasize obtained lines. Currently, a background has grey colour and the edges are white or black. Therefore, using simple mathematical calculations we can modify image to have black background and white edges. It is enough to get an absolute value, subtract 128 and then scale by multiplying 2 times.
+At the end, we can manipulate contrast to emphasize obtained lines. Currently, a~background has grey colour and the edges are white or black. Values in the reconstructed image are between -127 and 128. The lowest are black, the highest white and grey background has 0 value. Therefore, using simple mathematical operation we can modify image to have black background and white edges. It is enough to get an absolute value \cite{EdgeDetectionAlgorithm}. Then, all black edges becoming white and the background is black, because of the lowest value -- zero.
 
-\textit{** Calculations taken from article Edge detection. Add note about values in an image array **}
-
-Finally, we obtain the edges of the square shown on the figure \ref{fig:square_idwt_pp}.
+Finally, we obtain the edges of the square shown on the figure~\ref{fig:square_idwt_pp}.
 
 \begin{figure}[h]
 	\centering
@@ -85,7 +83,7 @@ d, & \text{for } |d| > \lambda.
 \end{cases}
 \end{equation}
 
-It assigns zero value for coefficients below the set threshold. The soft thresholding works in the same way on the coefficients smaller than $\lambda$, but additionally the coefficient bigger than the set threshold are ''shrinked'' towards zero, as it is defined below.
+It assigns zero value for coefficients below the set threshold. The soft thresholding works in the same way on the coefficients smaller than $\lambda$, but additionally the coefficient bigger than the set threshold are ``shrinked'' towards zero, as it is defined below.
 
 \begin{equation}
 D^S(d|\lambda)=
@@ -99,7 +97,7 @@ D^S(d|\lambda)=
 
 \subsection{Hard or soft thresholding}
 
-To see the differences between both types of thresholding lets consider a noisy image (fig. \ref{fig:square_s10}).
+To see the differences between both types of thresholding lets consider a~noisy image (fig.~\ref{fig:square_s10}).
 
 \begin{figure}[h]
 	\centering
@@ -108,7 +106,7 @@ To see the differences between both types of thresholding lets consider a noisy 
 	\label{fig:square_s10}
 \end{figure}
 
-The coefficients of 2-D DWT are shown on the graph \ref{fig:square_s10_coeffs}.
+The coefficients of 2-D DWT are shown on the graph~\ref{fig:square_s10_coeffs}.
 
 \begin{figure}[h]
 	\centering
@@ -117,7 +115,7 @@ The coefficients of 2-D DWT are shown on the graph \ref{fig:square_s10_coeffs}.
 	\label{fig:square_s10_coeffs}
 \end{figure}
 
-Now, according to the edge detection algorithm, we remove the LL component and we can denoise the other ones. Results of hard and soft thresholding are presented respectively on a figures \ref{fig:square_s10_hard_coeffs_d} and \ref{fig:square_s10_soft_coeffs_d}.
+Now, according to the edge detection algorithm, we remove the LL component and we can denoise the other ones. Results of hard and soft thresholding are presented respectively on a~figures~\ref{fig:square_s10_hard_coeffs_d} and~\ref{fig:square_s10_soft_coeffs_d}.
 
 \begin{figure}[h]
 	\centering
@@ -133,7 +131,7 @@ Now, according to the edge detection algorithm, we remove the LL component and w
 	\label{fig:square_s10_soft_coeffs_d}
 \end{figure}
 
-We can see the distinction between both thresholding, especially on the LH and HL components. After soft one the lines are smoother and slightly narrower, then in the other case. Therefore, the soft thresholding seems to be better for edge detection. Because of the smoother results, it is especially useful for the real life images, where edges are often blurred. To confirm this conclusion lets compare the final results, after inverse DWT (fig. \ref{fig:square_s10_idwt_pp})
+We can see the distinction between both thresholding, especially on the LH and HL components. After soft one the lines are smoother and slightly narrower, then in the other case. Therefore, the soft thresholding seems to be better for edge detection. Because of the smoother results, it is especially useful for the real life images, where edges are often blurred. To confirm this conclusion lets compare the final results, after inverse DWT (fig.~\ref{fig:square_s10_idwt_pp})
 
 \begin{figure}[h]
 	\begin{subdiagrams2}{square_s10_db1_hard_pp}{hard}{square_s10_db1_soft_pp}{soft}
@@ -146,11 +144,11 @@ We can see the distinction between both thresholding, especially on the LH and H
 %\newpage
 
 \subsection{Setting the threshold}
-The corollary from the previous subsection is that the soft thresholding provides better results for edge detection. However, there is also a question how to choose the value of a threshold $\lambda$ to denoise coefficients and do not loose any significant information. A simple idea is to get a quantile of the coefficients in the specific components.
+The corollary from the previous subsection is that the soft thresholding provides better results for edge detection. However, there is also a~question how to choose the value of a~threshold $\lambda$ to denoise coefficients and do not loose any significant information. A simple idea is to get a~quantile of the coefficients in the specific components.
 
-We decided to start with a quantile on level 0.95. It occurs to be accurate for the majority of standard images. All the earlier results are computed for threshold set as 0.95 quantile. Although, images which are noisier could require changing the quantile level.
+We decided to start with a~quantile on level 0.95. It occurs to be accurate for the majority of standard images. All the earlier results are computed for threshold set as 0.95 quantile. Although, images which are noisier could require changing the quantile level.
 
-Lets consider three images of basic diamond shape with different noisiness $\sigma$, shown on the figure \ref{fig:diamonds}.
+Lets consider three images of basic diamond shape with different noisiness $\sigma$, shown on the figure~\ref{fig:diamonds}.
 
 \begin{figure}[h]
 	\begin{subdiagrams3}{diamond_s16}{$\sigma=16$}{diamond_s10}{$\sigma=10$}{diamond_s4}{$\sigma=4$}
@@ -160,7 +158,7 @@ Lets consider three images of basic diamond shape with different noisiness $\sig
 	\label{fig:diamonds}
 \end{figure}
 
-At first, see how looks the result with mentioned earlier threshold set as 0.95 quantile (fig. \ref{fig:diamonds_95}). Algorithm found the edges properly but they are quite wide, especially for the noisier image. Lets try to increase the threshold to quantile on the 0.99 level. The results are presented on the graph \ref{fig:diamonds_99}. It can be seen that for (b) and (c) images the edges are narrower and visible. Nevertheless, result for the (a) image is incorrect, threshold is too high and too much information is removed.
+At first, see how looks the result with mentioned earlier threshold set as 0.95 quantile (fig.~\ref{fig:diamonds_95}). Algorithm found the edges properly but they are quite wide, especially for the noisier image. Lets try to increase the threshold to quantile on the 0.99 level. The results are presented on the graph~\ref{fig:diamonds_99}. It can be seen that for (b) and (c) images the edges are narrower and visible. Nevertheless, result for the (a) image is incorrect, threshold is too high and too much information is removed.
 
 \begin{figure}[h]
 	\begin{subdiagrams3}{diamond_s16_db1_95_pp}{$\sigma=16$}{diamond_s10_db1_95_pp}{$\sigma=10$}{diamond_s4_db1_95_pp}{$\sigma=4$}
@@ -178,7 +176,7 @@ At first, see how looks the result with mentioned earlier threshold set as 0.95 
 	\label{fig:diamonds_99}
 \end{figure}
 
-Hence, lets consider one more threshold on a 0.98 quantile level. The recognised edges for (a) and (b) images are presented on the figure \ref{fig:diamonds_98}. For this threshold edges are correctly detected.
+Hence, lets consider one more threshold on a~0.98 quantile level. The recognised edges for (a) and (b) images are presented on the figure~\ref{fig:diamonds_98}. For this threshold edges are correctly detected.
 
 \begin{figure}[h]
 	\begin{subdiagrams3}{diamond_s16_db1_98_pp}{$\sigma=16$}{diamond_s10_db1_98_pp}{$\sigma=10$}{diamond_s4_db1_98_pp}{$\sigma=4$}
@@ -191,23 +189,24 @@ Hence, lets consider one more threshold on a 0.98 quantile level. The recognised
 
 In conclusion, for noisier images increasing the threshold provides more accurate result, but it must be done carefully to not ignore crucial informations. Additionally, when image shows one sharp object and noisy background, by increasing the threshold we can control the amount of background details in the result.
 
-\section{Selection of a wavelet type}
+\section{Selection of a~wavelet type}
+\label{sec:wavelet_type}
 
-As it was mentioned in the chapter \ref{ch:theory}, the family of Daubechies wavelets are very suitable to image processing. Therefore, we carry out the edge detection using this kind of wavelets. However, each of $dbn$ wavelet has slightly different properties, mainly because of changing the $n$ value, the number of vanishing moments.
+As it was mentioned in the chapter~\ref{ch:theory}, the family of Daubechies wavelets are very suitable to image processing. Therefore, we carry out the edge detection using this kind of wavelets. However, each of $dbn$ wavelet has slightly different properties, mainly because of changing the $n$ value, the number of vanishing moments.
 
-Lets consider which of the Daubechies wavelets, are the best for edge detection problem. Remark that, all of the analysis below are conducted with the soft threshold set as 95 quantile. The figure \ref{fig:camera_haar} (a) presents an example image in grey scale, the man with a camera.
-Firstly, we take the simplest one, Haar ($db1$) wavelet. Looking at the detected edges on the figure \ref{fig:camera_haar} (b), we can clearly observe boundaries of main objects - the man and a camera. Not every edge is recognised, e.g. a hand of the man, because of a small difference in brightness.
+Lets consider which of the Daubechies wavelets, are the best for edge detection problem. Remark that, all of the analysis below are conducted with the soft threshold set as 95 quantile. The figure~\ref{fig:camera_haar} (a) presents an example image in grey scale, the man with a~camera.
+Firstly, we take the simplest one, Haar ($db1$) wavelet. Looking at the detected edges on the figure~\ref{fig:camera_haar} (b), we can clearly observe boundaries of main objects -- the man and a~camera. Not every edge is recognised, e.g. a~hand of the man, because of a~small difference in brightness.
 
 \begin{figure}[h]
 	\centering
 	\begin{mainsubdiagrams2}{camera}{original}{camera_haar_pp}{$db1$}
 	\end{mainsubdiagrams2}
 	
-	\caption{A man with a camera and detected edges using Haar wavelet.}
+	\caption{A man with a~camera and detected edges using Haar wavelet.}
 	\label{fig:camera_haar}
 \end{figure}
 
-Next, lets consider Daubechies wavelets with the higher $n$. The results for selected $n$ are presented on the figure \ref{fig:camera_daubechies}. They provide worse edge approximation than the Haar transform. There are small differences between specific $dbn$ but no regularity can be seen.
+Next, lets consider Daubechies wavelets with the higher $n$. The results for selected $n$ are presented on the figure~\ref{fig:camera_daubechies}. They provide worse edge approximation than the Haar transform. There are small differences between specific $dbn$ but no regularity can be seen.
 
 \begin{figure}[h]
 	\centering
@@ -217,11 +216,11 @@ Next, lets consider Daubechies wavelets with the higher $n$. The results for sel
 	\begin{mainsubdiagrams2}{camera_db6_pp}{$db6$}{camera_db8_pp}{$db8$}
 	\end{mainsubdiagrams2}
 	
-	\caption{A man with a camera - detected edges using selected Daubechies wavelets.}
+	\caption{A man with a~camera -- detected edges using selected Daubechies wavelets.}
 	\label{fig:camera_daubechies}
 \end{figure}
 
-Based on the example above, the conclusion can be made that the Haar wavelet provides the best results in edge detection. Unfortunately, this simplest wavelet not always works properly. For the basic square image, the Haar transform does not recognise any edges (fig. \ref{fig:square_daubechies} (b)). Hence, we need to apply Daubechies wavelet with the bigger $n$ value. For the $n=2$ or more, the square's perimeter is correctly detected and the results for different $n=2,3,\ldots$ are very similar to each other (fig. \ref{fig:square_daubechies}). The whole edge detection analysis presented in section \ref{sec:implementation} was made with $db2$ wavelets.
+Based on the example above, the conclusion can be made that the Haar wavelet provides the best results in edge detection. Unfortunately, this simplest wavelet not always works properly. For the basic square image, the Haar transform does not recognise any edges (fig.~\ref{fig:square_daubechies} (b)). Hence, we need to apply Daubechies wavelet with the bigger $n$ value. For the $n=2$ or more, the square's perimeter is correctly detected and the results for different $n=2,3,\ldots$ are very similar to each other (fig.~\ref{fig:square_daubechies}). The whole edge detection analysis presented in section~\ref{sec:implementation} was made with $db2$ wavelets.
 
 \begin{figure}[h]
 	\centering
@@ -231,11 +230,11 @@ Based on the example above, the conclusion can be made that the Haar wavelet pro
 	\begin{subdiagrams2}{square_db2_pp}{$db2$}{square_db4_pp}{$db4$}
 	\end{subdiagrams2}
 	
-	\caption{A simple square - detected edges using selected Daubechies wavelets.}
+	\caption{A simple square -- detected edges using selected Daubechies wavelets.}
 	\label{fig:square_daubechies}
 \end{figure}
 
-Lets consider the third example, a noisy square (fig. \ref{fig:rotated_square_daubechies}). In this case only the $db1$ (Haar) provides proper result - the square's perimeter. The edge is quite wide, but this feature can be improved by thresholding described in section \ref{sec:threshold}. The rest of presented results (c) - (f) are incorrect. Therefore, we revealed that the Haar wavelet is also the most appropriate for recognizing edges on noisy images. 
+Lets consider the third example, a~noisy square (fig.~\ref{fig:rotated_square_daubechies}). In this case only the $db1$ (Haar) provides proper result -- the square's perimeter. The edge is quite wide, but this feature can be improved by thresholding described in section~\ref{sec:threshold}. The rest of presented results (c) -- (f) are incorrect. Therefore, we revealed that the Haar wavelet is also the most appropriate for recognizing edges on noisy images. 
 
 \begin{figure}[h]
 	\centering
@@ -248,11 +247,11 @@ Lets consider the third example, a noisy square (fig. \ref{fig:rotated_square_da
 	\begin{subdiagrams2}{rotated_square_db6_pp}{$db6$}{rotated_square_db8_pp}{$db8$}
 	\end{subdiagrams2}
 	
-	\caption{A noisy rotated square - detected edges using selected Daubechies wavelets.}
+	\caption{A noisy rotated square -- detected edges using selected Daubechies wavelets.}
 	\label{fig:rotated_square_daubechies}
 \end{figure}
 
-The last example is a photo of a frog presented on the figure \ref{fig:frog_daubechies}. Incidentally, this photo was made in The Wroclaw Botanical Garden. Back to the results, it can be seen that for Haar wavelet (b) edges are the clearest and sharpest. On the other graphs, (c) and (d), the contour of the frog is also visible, but it is more blurred. Moreover, the bigger $n$, the edges are more unclear.
+The last example is a~photo of a~frog presented on the figure~\ref{fig:frog_daubechies}. Incidentally, this photo was made in The Wroclaw Botanical Garden. Back to the results, it can be seen that for Haar wavelet (b) edges are the clearest and sharpest. On the other graphs, (c) and (d), the contour of the frog is also visible, but it is more blurred. Moreover, the bigger $n$, the edges are more unclear.
 
 \begin{figure}[h]
 	\centering
@@ -268,7 +267,7 @@ The last example is a photo of a frog presented on the figure \ref{fig:frog_daub
 	\begin{subdiagram}{frog_db6_pp}{$db6$}
 	\end{subdiagram}
 	
-	\caption{A frog - detected edges using selected Daubechies wavelets.}
+	\caption{A frog -- detected edges using selected Daubechies wavelets.}
 	\label{fig:frog_daubechies}
 \end{figure}
 
