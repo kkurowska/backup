@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 AUG 2018 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 AUG 2018 23:35
 entering extended mode
 **./title_page.tex
 (title_page.tex
@@ -1005,19 +1005,19 @@ Package rerunfilecheck Info: File `title_page.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 12024 strings out of 493334
- 210370 string characters out of 3139251
+ 12029 strings out of 493334
+ 210415 string characters out of 3139251
  374070 words of memory out of 3000000
  15266 multiletter control sequences out of 15000+200000
- 46325 words of font info for 118 fonts, out of 3000000 for 9000
+ 46606 words of font info for 122 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,51p,419b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,51p,414b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on title_page.pdf (1 page, 79204 bytes).
+Output written on title_page.pdf (1 page, 79225 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)

@@ -14,5 +14,6 @@
 \contentsline {section}{\numberline {2.3\relax .\kern .5em }Selection of a\nobreakspace {}wavelet type}{19}
 \contentsline {chapter}{Chapter\ 3\relax .\kern .5em Application in medicine}{25}
 \contentsline {chapter}{Summary}{29}
-\contentsline {chapter}{List of Figures}{31}
-\contentsline {chapter}{Bibliography}{33}
+\contentsline {chapter}{Appendix}{31}
+\contentsline {chapter}{List of Figures}{33}
+\contentsline {chapter}{Bibliography}{35}

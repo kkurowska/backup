@@ -38,24 +38,29 @@
 
 \newcommand{\1}[1]{\mathds{1}\left(#1\right)}
 
-%\newenvironment{diagrams}[2]{\begin{figure}[p]
-%	%\centering
-%	\begin{subfigure}{.5\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{wykresy/#1.png}
-%		\caption{}
-%		\label{#1}
-%	\end{subfigure}
-%	\begin{subfigure}{.5\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{wykresy/#2.png}
-%		\caption{}
-%		\label{#2}
-%	\end{subfigure}
-%	}
-%	{
-%	\end{figure}
-%	}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
 
 \newenvironment{mainsubdiagrams2}[4]{
 	\begin{subfigure}{.45\textwidth}
@@ -124,6 +129,7 @@
 \newtheorem{defn}[thm]{Definition}
 
 
+
 \begin{document}
 	
 \begin{titlepage}
@@ -138,6 +144,7 @@
 \include{chapter2}
 \include{chapter3}
 \include{summary}
+\include{appendix}
 
 \listoffigures
 %\listoftables

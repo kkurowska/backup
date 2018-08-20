@@ -1,24 +1,24 @@
 \chapter*{Introduction}
 
 Data mining is a~process of searching big datasets for transparent and useful regularities or relationships. 
-Nowadays this field of study has become important, because people gather a~huge amount of, often unstructured, data. High-\allowbreak-dimensionality, missing values or noisiness are only some of the problems that we have to face in data mining tasks. 
+Nowadays this field of study has become important because people gather a~huge amount of, often unstructured, data. High-\allowbreak dimensionality, missing values or noisiness are only some of the problems that we have to face in data mining tasks. 
 
-Wavelets, thanks to their properties, can be really helpful in this area. First of all, there exist efficient algorithms for wavelet transform. Low computational complexity is a~big advantage in case of big data analysis. Secondly, the vanishing moments property, described in chapter~\ref{ch:theory}, provides distinction in importance of the wavelet coefficients, the bigger are more relevant. Thus, by removing those less significant we can obtain the trend of analysed data. Also, the wavelet coefficients are mainly decorrelated, hence transformation data to wavelet domain facilitates conducting data mining algorithms.
+Wavelets, thanks to their properties, can be really helpful in this area. First of all, there exist efficient algorithms for wavelet transform. Low computational complexity is a~big advantage in case of a big data analysis. Secondly, the vanishing moments' property, described in chapter~\ref{ch:theory}, provides distinction in an importance of the wavelet coefficients, the bigger are more relevant. Thus, by removing those less significant we can obtain the trend of analysed data. Also, the wavelet coefficients are mainly decorrelated, hence a transformation data to wavelet domain facilitates conducting data mining algorithms.
  
 %the wavelet transform supplies the high and low frequency resolutions.
 
-Data mining is composed of a~few problems: data management, pre-\allowbreak{processing}, main mining process and post-processing. Wavelets are especially useful in two of them: pre-processing and core process. Before the main analysis, it is often required to clear the data from noisiness or simplify them. This stage is known as pre-\allowbreak{processing}. The most common tasks are:
+Data mining is composed of a~few problems: data management, pre-\allowbreak{processing}, a main mining process and post-processing. Wavelets are especially useful in two of them: pre-processing and core process. Before the main analysis, it is often required to clear the data from noisiness or simplify them. This stage is known as pre-\allowbreak{processing}. The most common tasks are:
 \begin{itemize}
-\item Denoising signals and images. The Wavelet noise reduction -- transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
+\item Denoising signals and images. The wavelet noise reduction -- transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
 
-\item Dimensionality reduction. The idea is to simplify data by getting rid off the less relevant information. In a~wavelet domain we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
+\item Dimensionality reduction. The idea is to simplify data by getting rid off the less relevant information. In a~wavelet domain, we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
 \end{itemize}
 
 \noindent The core analysis is often carried out with machine learning algorithms. Here are the examples of processing types:
 \begin{itemize}
-\item Clustering. Low frequency parts are correlated with regions of objects concentration and the high frequency parts correspond to the areas with sudden changes in the objects distribution. Thus, clustering can be conducted by recognising correlated components in the wavelet domain.
+\item Clustering. Low-frequency parts are correlated with regions of objects concentration and the high-frequency parts correspond to the areas with sudden changes in the objects distribution. Thus, clustering can be conducted by recognising correlated components in the wavelet domain.
 
-\item Classification. The idea is to determine the class for the analysed object. Wavelet-base algorithm in machine learning was presented by Castelli in 1996 \cite{castelli}. This algorithm is notable faster than the classic one.
+\item Classification. The idea is to determine the class for the analysed object. A wavelet-base algorithm in machine learning was presented by Castelli in 1996 \cite{castelli}. This algorithm is notably faster than the classic one.
 
 \item Regression. Uses to predict future values based on historical data. Wavelet approach is the non-parametric regression. This case is similar to the dimensionality reduction.
 
@@ -28,9 +28,9 @@ Data mining is composed of a~few problems: data management, pre-\allowbreak{proc
 \section*{Overview}
 The wavelet theory is introduced in chapter~\ref{ch:theory}. The special attention is paid to the Daubechies family of wavelets, which are widely applied in data analysis. Also, the definitions of forward and backward Wavelet Transforms are characterized. There is also described, the most important in image analysis, 2-Dimensional Discrete Wavelet Transform.
 
-The chapter~\ref{ch:edge_detection} treats about the main goal of the thesis, edge detection problem, as an example of the dimensionality reduction in pre-processing. The wavelet-based algorithm is introduced and developed. Moreover, sections~\ref{sec:threshold} and~\ref{sec:wavelet_type} are about selecting the parameters -- threshold and wavelet type -- for the various images.
+Chapter~\ref{ch:edge_detection} treats the main goal of the thesis, an edge detection problem, as an example of the dimensionality reduction in pre-processing. The wavelet-based algorithm is introduced and developed. Moreover, sections~\ref{sec:threshold} and~\ref{sec:wavelet_type} are about selecting the parameters -- threshold and wavelet type -- for the various images.
 
-Ultimately, chapter~\ref{ch:medical_application} presents the pre-processing application in the problem of classification biomedical images. The feature extraction is performed using 2-D Discrete Wavelet Transform and specific filters. There are examples of the biomedical images with the extracted features using the algorithm from the chapter~\ref{ch:edge_detection}.
+Ultimately, chapter~\ref{ch:medical_application} presents the pre-processing application in the problem of biomedical images classification. The feature extraction is performed using 2-D Discrete Wavelet Transform and specific filters. There are examples of the biomedical images with the extracted features using the algorithm from the chapter~\ref{ch:edge_detection}.
 
 
 

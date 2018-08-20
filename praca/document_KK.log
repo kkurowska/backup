@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 AUG 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  21 AUG 2018 00:12
 entering extended mode
 **./document_KK.tex
 (document_KK.tex
@@ -579,40 +579,69 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip52
 \backup@length=\skip53
 )
-\c@thm=\count113
- (document_KK.aux
-(introduction.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count113
+\lst@gtempboxa=\box32
+\lst@token=\toks33
+\lst@length=\count114
+\lst@currlwidth=\dimen141
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen142
+\lst@width=\dimen143
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen144
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box33
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+\c@thm=\count121
+
+(document_KK.aux (introduction.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux
 
 LaTeX Warning: Label `fig:brain2' multiply defined.
 
-) (summary.aux))
+) (summary.aux) (appendix.aux))
 \openout1 = `document_KK.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen141
-\scratchbox=\box32
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen142
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count122
+\scratchdimen=\dimen145
+\scratchbox=\box34
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen146
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks35
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -655,7 +684,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box33
+\AtBeginShipoutBox=\box35
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -683,40 +712,42 @@ Package caption Warning: Forced redefinition of \caption since the
 See the caption package documentation for explanation.
 
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count128
 <title_page.pdf, id=1, 597.50829pt x 845.0471pt>
 File: title_page.pdf Graphic file (type pdf)
  <use title_page.pdf>
-Package pdftex.def Info: title_page.pdf used on input line 130.
+Package pdftex.def Info: title_page.pdf used on input line 136.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: title_page.pdf Graphic file (type pdf)
 
 <use title_page.pdf>
-Package pdftex.def Info: title_page.pdf used on input line 130.
+Package pdftex.def Info: title_page.pdf used on input line 136.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  <title_page.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
 File: title_page.pdf Graphic file (type pdf)
 
 <use title_page.pdf, page 1>
-Package pdftex.def Info: title_page.pdf, page1 used on input line 130.
+Package pdftex.def Info: title_page.pdf, page1 used on input line 136.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: title_page.pdf Graphic file (type pdf)
  <use title_page.pdf, page 1>
-Package pdftex.def Info: title_page.pdf, page1 used on input line 130.
+Package pdftex.def Info: title_page.pdf, page1 used on input line 136.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: title_page.pdf Graphic file (type pdf)
 
 <use title_page.pdf, page 1>
-Package pdftex.def Info: title_page.pdf, page1 used on input line 130.
+Package pdftex.def Info: title_page.pdf, page1 used on input line 136.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: title_page.pdf Graphic file (type pdf)
  <use title_page.pdf, page 1>
-Package pdftex.def Info: title_page.pdf, page1 used on input line 130.
+Package pdftex.def Info: title_page.pdf, page1 used on input line 136.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: title_page.pdf Graphic file (type pdf)
 
 <use title_page.pdf, page 1>
-Package pdftex.def Info: title_page.pdf, page1 used on input line 130.
+Package pdftex.def Info: title_page.pdf, page1 used on input line 136.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
@@ -1296,10 +1327,24 @@ leg1_haar_100_0.png (PNG copy)>]
 
 
 
-]) [29] [30
+]) [29]
+\openout2 = `appendix.aux'.
+
+ (appendix.tex [30
 
 
-] (document_KK.lof
+
+]
+Overfull \hbox (6.65945pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31])
+[32] (document_KK.lof
 Overfull \hbox (6.01338pt too wide) in paragraph at lines 5--5
  \OT1/cmr/m/n/10.95 Source: http://radio.feld.cvut.cz/matlab/toolbox/wavelet/ch
 01[]31a.html. [][]  
@@ -1309,22 +1354,25 @@ Overfull \hbox (6.01338pt too wide) in paragraph at lines 5--5
 \tf@lof=\write4
 \openout4 = `document_KK.lof'.
 
- (document_KK.bbl [31] [32
+ (document_KK.bbl [33
 
-]) [33] (document_KK.aux (introduction.aux)
-(chapter1.aux) (chapter2.aux) (chapter3.aux) (summary.aux))
+
+] [34
+
+]) [35] (document_KK.aux (introduction.aux)
+(chapter1.aux) (chapter2.aux) (chapter3.aux) (summary.aux) (appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5998 strings out of 493334
- 89508 string characters out of 3139251
- 164565 words of memory out of 3000000
- 9318 multiletter control sequences out of 15000+200000
- 12198 words of font info for 46 fonts, out of 3000000 for 9000
+ 7836 strings out of 493334
+ 113114 string characters out of 3139251
+ 232923 words of memory out of 3000000
+ 11133 multiletter control sequences out of 15000+200000
+ 12366 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,47p,1001b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,47p,1001b,1765s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1339,15 +1387,16 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc
-8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/palatino/uplri8a.pfb>
-Output written on document_KK.pdf (33 pages, 2783992 bytes).
+msfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on document_KK.pdf (35 pages, 2805836 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
+ 292 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
