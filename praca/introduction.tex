@@ -3,9 +3,6 @@
 \textit{ ** Few words about my thesis...
 Generally what is a data mining, what are the wavelets, what are the applications in data mining and finally, what is the main purpose - edge detection. **}
 
-Data mining is connected with computing huge amount of data, thus to analyse those data it is require to use algorithms with low computational complexity. Wavelet transform is very efficient.
-
-
 %\textit{ ** VERY GOOD PARAGRAPH - JUST NEEDS TO BE WRITE WITH DIFFERENT WORDS **}
 %	
 %\textit{ Real world data sets are usually not directly suitable for performing Data
@@ -19,30 +16,31 @@ Data mining is connected with computing huge amount of data, thus to analyse tho
 %we could transform the original data into wavelet domain and then carry out
 %Data Mining tasks.}
 
-In today world more and more times we are operating on data that tend to be big and high-dimensional.
-In addiction most of them can be really messy. Missing values, noises or inconsistent data are only few of the problems we have to face. That is why working with Data Mining algorithms are often difficult or even impossible. 
-At this point wavelets are usually the solution. Thanks to their properties we are able to underlying function from the data.
-Then Data Mining tasks are way easier to carry out. 
-But how it is done? Every wavelet consists with many different wavelet coefficients.
-We can specify, thanks to vanishing moment property, which of wavelet coefficients are significant in our case.
-Knowing this we can perform wavelet transform which makes our data more less noisy and dimensional reduced.
-It is possible because wavelet coefficients are generally decorrelated.
+Nowadays, people gather a huge amount of, often unstructured, data. High-\allowbreak-dimensionality, missing values or noisiness are only some of the problems that we have to face in data mining. Wavelets can be really helpful in this area, thanks to their properties. First of all, there exist efficient algorithms for wavelet transform. Low computational complexity is a big advantage in case of data mining analysis.
 
-%Pre-processing:
-%
-%Denoising signals and images. Wavelet denoising - transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
-%
-%Data Transformation?
-%
-%Dimensionality reduction. The idea is to simplify data, by getting rid off the less relevant information. In a wavelet domain we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
-%
-%Machine learning processing:
-%
-%Clustering. Low frequency parts are correlated with regions of objects concentration and the high frequency parts correspond to the areas with sudden changes in the objects distribution. Thus, clustering can be conducted by recognising correlated components in the wavelet domain.
-%
-%Classification.
-%Regression.
-%Distributed Data Mining.
-%Similarity Search/Indexing.
-%Approximate Query Processing.
-%Traffic Modelling.
+%At this point wavelets are usually the solution. Thanks to their properties we are able to underlying function from the data.
+%Then Data Mining tasks are way easier to carry out. 
+%But how it is done? Every wavelet consists with many different wavelet coefficients.
+%We can specify, thanks to vanishing moment property, which of wavelet coefficients are significant in our case.
+%Knowing this we can perform wavelet transform which makes our data more less noisy and dimensional reduced.
+%It is possible because wavelet coefficients are generally decorrelated. \newline
+
+Pre-processing:
+\begin{itemize}
+\item Denoising signals and images. The Wavelet noise reduction - transform data into wavelet domain, remove noise components (with lower frequency) and then back to the original domain.
+
+\item Dimensionality reduction. The idea is to simplify data, by getting rid off the less relevant information. In a wavelet domain we retain only the largest coefficients. Then, after getting back to the original domain we obtain simplified data.
+\end{itemize}
+
+
+Machine learning processing:
+\begin{itemize}
+\item Clustering. Low frequency parts are correlated with regions of objects concentration and the high frequency parts correspond to the areas with sudden changes in the objects distribution. Thus, clustering can be conducted by recognising correlated components in the wavelet domain.
+
+\item Classification. Wavelet-base algorithm in machine learning (2-D DWT) developed by Castelli 1996. Notable faster than the classic one.
+
+\item Regression. Uses to predict future values based on historical data. Wavelet approach is the non-parametric regression. Similar to the dimensionality reduction case.
+
+\item Distributed Data Mining. Thanks to the orthogonality, data mining tasks can be carried out on smaller subsets of data independently and than results can be combined.
+\end{itemize}
+

@@ -1,4 +1,5 @@
 \chapter{Wavelets theory}
+\label{ch:theory}
 A ''wavelet'' literally means a small wave. This term says a lot about its nature. Wavelets are a family of functions which oscillates like wave and should be compactly supported.
 
 \begin{defn}
@@ -34,7 +35,7 @@ There are plenty of different mother wavelets, for example
 The wavelet functions have specific properties which are useful in data analysis. According to the \cite{WaveletMethodsInDataMining} article, the most important are:
 
 \begin{itemize}
-\item Vanishing moments. Wavelet has $n$ vanishing moments, when $\int t^j \psi(t) dt=0$ for $j=0,1,\ldots,n-1$. For all wavelets at least the first moment, the mean value, is equal zero. Particular wavelets have more vanishing moments, e.g. Daubechies family, the $Daub4$ and $Daub20$ presented on the figure \ref{fig:wavelets} has respectively, 2 and 10 vanishing moments. This property is also known as approximation order, because for the part of data which are represented as n-degree polynomials, the wavelet coefficients are also equal zero (according to the definition \ref{def:CWT}). So the bigger $n$, the more data is neglected. \textit{** Add that the bigger coeffs are more significant? **}
+\item Vanishing moments. Wavelet has $n$ vanishing moments, when $\int t^j \psi(t) dt=0$ for $j=0,1,\ldots,n-1$. For all wavelets at least the first moment, the mean value, is equal zero. Particular wavelets have more vanishing moments, e.g. Daubechies family, the $Daub4$ and $Daub20$ presented on the figure \ref{fig:wavelets} has respectively, 2 and 10 vanishing moments. This property is also known as approximation order, because for the part of data which are represented as n-degree polynomials, the wavelet coefficients are also equal zero (according to the definition \ref{def:CWT}). So the bigger $n$, the more data is neglected.
 
 \item Compact support. Wavelets domain is a compact set, most of the time it is a finite interval. This property protects from leaving a data region during wavelet processing.
 
@@ -142,9 +143,9 @@ There are two types of Wavelet Transform:
 	\item Discrete Wavelet Transform (DWT).
 \end{itemize}
 
-The Discrete Wavelet Transform has a wide range of applications in image processing, for example denoising and compressing, also in detecting shapes on images.
+The Discrete Wavelet Transform has a wide range of applications in denoising and compressing signals and images.
 
-\textit{** I'll add a little more about applications in pre-processing and machine learning **}
+\textit{** More info about applications in pre-processing and machine learning is currently in the Introduction. I'm not sure where to finally put it **}
 
 Scale and translation parameters are defined as
 
@@ -168,7 +169,7 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 \end{figure}
 
 
-\section{2-D Discrete Wavelet transform}
+\section{2-D Discrete Wavelet Transform}
 \label{sec:2D_DWT}
 
 2-Dimensional Discrete Wavelet Transform works similar way as 1-D with High Pass Filter, Low Pass Filter and downsampling, except that one level of the decomposition includes double filtering, on columns and rows. The figure \ref{fig:2D_DWT} shows an image decomposition. Firstly, the DWT is applied on columns of the input image and then on the rows of the both outputs. Ultimately, there are four results:
@@ -187,7 +188,10 @@ The figure \ref{fig:DWT} on a page \pageref{fig:DWT} shows how DWT works. Discre
 	\label{fig:2D_DWT}
 \end{figure}
 
-Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part presents similar issues but in a vertical direction. The HH shows sudden changes in a diagonal direction. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions.
+Recall that the outcome of Low Pass Filter in the previous case was the main signal (without a noise). Thus, a 2-Dimensional equivalent is an approximation of an analysed image. The High Pass Filter captures high frequencies, then for an image the outcome are sudden changes in the image contrast. Now, lets focus on what exactly each result represent. First one, the LL is just an approximation of the initial image. Next, the LH shows abrupt changes in a horizontal direction, whereas the HL part presents similar issues but in a vertical direction. The HH shows sudden changes in a diagonal way. In conclusion, the output of 2-D DWT gives us an approximation of the image and three parts with abrupt changes in different directions.
+
+The 2-D DWT can be really useful in compressing and denoising images. It can compress pictures better than the JPEG, often without changes visible by the human eye. This transform is applicable in other image processing, like edge enhancement, edge detection and shape recognition.
+
 
 \section{Inverse Wavelet Transform}
 

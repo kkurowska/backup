@@ -1,3 +1,53 @@
-\chapter{}
+\chapter{Application in medicine}
 
-\textit{** Results. Maybe something about medical applications **}
+The usage of DWT in biomedical images is described in the article \cite{BiomedicalImages}, mainly classification problem.
+
+\textit{ ** I am not sure if my result has any value but I put them below. Maybe I'll add some description that also edge detection can be useful in pre-processing before carrying out the classification algorithms **}
+
+\begin{figure}[h]
+	\centering
+	\begin{subdiagram}{brain_MRI_tumour}{original}
+	\end{subdiagram}
+	
+	\begin{subdiagram}{brain_MRI_tumour_haar_0}{detected edges}
+	\end{subdiagram}
+	
+	\caption{A brain MRI - tumour.}
+	\label{fig:brain1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{mainsubdiagrams2}{brain2}{original}{brain2_haar_0}{detected edges}
+	\end{mainsubdiagrams2}
+	
+	\caption{A brain MRI - small tumour.}
+	\label{fig:brain2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{mainsubdiagrams2}{lungs1}{original}{lungs1_haar_0}{detected edges}
+	\end{mainsubdiagrams2}
+	
+	\caption{Lungs.}
+	\label{fig:lungs}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{mainsubdiagrams2}{broken_bone}{original}{broken_bone_haar_90}{detected edges}
+	\end{mainsubdiagrams2}
+	
+	\caption{Broken bone - arm.}
+	\label{fig:arm}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{mainsubdiagrams2}{leg1}{original}{leg1_haar_95}{detected edges}
+	\end{mainsubdiagrams2}
+	
+	\caption{Broken bone - leg.}
+	\label{fig:leg}
+\end{figure}
