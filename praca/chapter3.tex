@@ -1,53 +1,59 @@
 \chapter{Application in medicine}
 
-The usage of DWT in biomedical images is described in the article \cite{BiomedicalImages}, mainly classification problem.
+The novel medicine using computer algorithms to improve detecting, e.g. cancer, in the early stage.
+This kind of algorithms needs to extract features from the biomedical images and then, classify if there are any cancer changes. The 2-D Discrete Wavelet Transform provides information about brightness, shape and structure of images, because of the high time-frequency resolutions. The horizontal (LH) and vertical (HL) details of the wavelet decomposition can describe well the modifications in biological tissue \cite{MRI}. 
 
-\textit{ ** I am not sure if my result has any value but I put them below. Maybe I'll add some description that also edge detection can be useful in pre-processing before carrying out the classification algorithms **}
+Thus, in this application the DWT feature extraction is the pre-processing task for the machine learning classification. The Support Vector Machine binary classifier is applied to determine a disease on the analysed image. Algorithms with the wavelet-base pre-processing have widely application in detecting lots of diseases, e.g. the brain tumour, sclerosis, Alzheimer's, giloma, as well as the breast cancer, skin cancer or lung nodules  \cite{BiomedicalImages}.
+
+The edge detection is one of the problems of features extraction. Lets look at the examples, how recognizing the edges can improve the clearness of the biomedical images. The figures \ref{fig:brain2}-\ref{fig:leg}, shows the detected edges of different medical images, i.e. brain MRI, x-ray of the limbs and lungs. The results were obtained slightly different then how it was described in the chapter \ref{ch:edge_detection}. According to the article \cite{MRI}, only the LH and HL components leave, while the LL and HH are removed. Furthermore, there is no thresholding applied. As we can see, the main features of the specific images are visible after detection. This kind of dimensionality reduction can greatly improve the machine learning classification.
+
+\begin{figure}[h]
+	\centering
+	\begin{mainsubdiagrams2}{brain2}{original}{brain2_haar_100_0}{detected edges}
+	\end{mainsubdiagrams2}
+	
+	\caption{Brain MRI - a small tumour.}
+	\label{fig:brain2}
+\end{figure}
+
 
 \begin{figure}[h]
 	\centering
 	\begin{subdiagram}{brain_MRI_tumour}{original}
 	\end{subdiagram}
 	
-	\begin{subdiagram}{brain_MRI_tumour_haar_0}{detected edges}
+	\begin{subdiagram}{brain_MRI_tumour_haar_100_0}{detected edges}
 	\end{subdiagram}
 	
-	\caption{A brain MRI - tumour.}
+	\caption{Brain MRI - a tumour.}
 	\label{fig:brain1}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\begin{mainsubdiagrams2}{brain2}{original}{brain2_haar_0}{detected edges}
-	\end{mainsubdiagrams2}
-	
-	\caption{A brain MRI - small tumour.}
-	\label{fig:brain2}
-\end{figure}
 
 \begin{figure}[h]
 	\centering
-	\begin{mainsubdiagrams2}{lungs1}{original}{lungs1_haar_0}{detected edges}
+	\begin{mainsubdiagrams2}{lungs1}{original}{lungs1_haar_100_0}{detected edges}
 	\end{mainsubdiagrams2}
 	
 	\caption{Lungs.}
 	\label{fig:lungs}
 \end{figure}
 
+
 \begin{figure}[h]
 	\centering
-	\begin{mainsubdiagrams2}{broken_bone}{original}{broken_bone_haar_90}{detected edges}
+	\begin{mainsubdiagrams2}{broken_bone}{original}{broken_bone_haar_100_0}{detected edges}
 	\end{mainsubdiagrams2}
 	
-	\caption{Broken bone - arm.}
+	\caption{A broken bone - arm.}
 	\label{fig:arm}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\begin{mainsubdiagrams2}{leg1}{original}{leg1_haar_95}{detected edges}
+	\begin{mainsubdiagrams2}{leg1}{original}{leg1_haar_100_0}{detected edges}
 	\end{mainsubdiagrams2}
 	
-	\caption{Broken bone - leg.}
+	\caption{A broken bone - leg.}
 	\label{fig:leg}
 \end{figure}

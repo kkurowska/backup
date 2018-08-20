@@ -1,26 +1,14 @@
 \begin{thebibliography}{1}
 
-\bibitem{WaveletMethodsInDataMining}
-T.~{Li, S. Ma, M. Ogihara}.
-\newblock Wavelet methods in data mining.
-\newblock {\em Data Mining and Knowledge Discovery Handbook}, pages 603--626,
-  2005.
-
-\bibitem{WaveletSupportVectorMachine}
-L.~{Zhang, W. Zhou, L. Jiao}.
-\newblock Wavelet support vector machine.
-\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, Part B
-  (Cybernetics)(34.1):34--39, 2004.
+\bibitem{EdgeDetection}
+V.~R. Chaganti.
+\newblock Edge detection of noisy images using 2-d discrete wavelet transform.
+\newblock Master's thesis, The Florida State University, 2005.
 
 \bibitem{WaveletNotes}
 B.~{Kessler, G. Payne, W. Polyzou}.
 \newblock Wavelet notes.
-\newblock The University of Iowa, February 2008.
-
-\bibitem{EdgeDetection}
-Venkata~Ravikiran Chaganti.
-\newblock Edge detection of noisy images using 2-d discrete wavelet transform.
-\newblock Master's thesis, The Florida State University, 2005.
+\newblock The University of Iowa, Feb. 2008.
 
 \bibitem{BiomedicalImages}
 S.~{Lahmiri, M. Boukadoum}.
@@ -28,9 +16,27 @@ S.~{Lahmiri, M. Boukadoum}.
   for features extraction from biomedical images.
 \newblock {\em Journal of Medical Engineering}, 2013.
 
+\bibitem{MRI}
+S.~{Lahmiri, M. Boukadoum}.
+\newblock Classification of brain mri using wavelet decomposition and svm.
+\newblock {\em International Journal of Computer Applications}, 154(5), Nov.
+  2016.
+
+\bibitem{WaveletMethodsInDataMining}
+T.~{Li, S. Ma, M. Ogihara}.
+\newblock Wavelet methods in data mining.
+\newblock {\em Data Mining and Knowledge Discovery Handbook}, pages 603--626,
+  2005.
+
 \bibitem{APrimerOnWavelets}
-James~S. Walker.
+J.~S. Walker.
 \newblock {\em A Primer on Wavelets and their Scientific Applications}.
 \newblock Taylor \& Francis Group, second edition, 2008.
+
+\bibitem{WaveletSupportVectorMachine}
+L.~{Zhang, W. Zhou, L. Jiao}.
+\newblock Wavelet support vector machine.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, Part B
+  (Cybernetics)(34.1):34--39, 2004.
 
 \end{thebibliography}
